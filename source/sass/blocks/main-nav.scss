@@ -1,0 +1,16 @@
+.main-nav__link {
+  @include oswald-medium();
+  font-size: $main-nav-fs;
+  line-height: $main-nav-lh;
+  color: $font-dark;
+  text-transform: uppercase;
+
+  &:hover,
+  &focus {
+    color: rgba($font-dark, 0.6);
+  }
+
+  &:active {
+    color: rgba($font-dark, 0.3);
+  }
+}

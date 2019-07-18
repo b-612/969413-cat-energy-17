@@ -1,0 +1,10 @@
+.program-selection__title {
+  width: 250px;
+  margin: 15px 0;
+
+  @include oswald-regular();
+  font-size: $program-selection__title-fs;
+  line-height: $program-selection__title-lh;
+  color: $font-dark;
+  text-transform: uppercase;
+}

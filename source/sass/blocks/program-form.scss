@@ -1,0 +1,53 @@
+.program-form {
+  padding: 34px 0;
+}
+
+.program-form__wrapper {
+  border-top: $product-border;
+  border-bottom: $product-border;
+}
+
+.program-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.program-form__title {
+  font-size: $program-form__title-fs;
+  line-height: $program-form__title-lh;
+}
+
+.program-form__label {
+  display: block;
+
+  @include oswald-regular();
+  font-size: $program-form__label-fs;
+  line-height: $program-form__label-lh;
+  text-transform: uppercase;
+  color: $font-dark-gray;
+}
+
+.program-form__input {
+  color: $font-gray;
+  text-transform: uppercase;
+
+  &::-webkit-input-placeholder {
+    @include oswald-regular();
+    font-size: $program-form__label-fs;
+    line-height: $program-form__label-lh;
+    color: $font-dark-gray;
+  }
+
+  &:-moz-placeholder {
+    @include oswald-regular();
+    font-size: $program-form__label-fs;
+    line-height: $program-form__label-lh;
+    color: $font-dark-gray;
+  }
+}
+
+.program-form__footnote {
+  font-size: $program-form__footnote-fs;
+  line-height: $program-form__footnote-lh;
+}
