@@ -5,7 +5,7 @@
 
 .results-factoid__value,
 .results-factoid__cost,
-.results-factoid__was-became{
+.results-factoid__was-became {
   @include oswald-regular();
   text-transform: uppercase;
 }
@@ -28,4 +28,3 @@
   font-size: $results-factoid__was-became-fs;
   line-height: $results-factoid__was-became-lh;
 }
-

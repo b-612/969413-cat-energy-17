@@ -1,6 +1,5 @@
 @import "variables.scss";
 @import "mixins.scss";
-@import "normalize.scss";
 @import "global.scss";
 @import "blocks/global-container.scss";
 @import "blocks/visually-hidden.scss";
@@ -8,7 +7,6 @@
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
-@import "blocks/page-main.scss";
 @import "blocks/section-title.scss";
 @import "blocks/proposition.scss";
 @import "blocks/page-title.scss";
@@ -18,7 +16,6 @@
 @import "blocks/how-it-works.scss";
 @import "blocks/example.scss";
 @import "blocks/results-factoid.scss";
-@import "blocks/products.scss";
 @import "blocks/product.scss";
 @import "blocks/product-table.scss";
 @import "blocks/add-product-table.scss";
@@ -29,8 +26,6 @@
 @import "blocks/gifts.scss";
 @import "blocks/program-selection.scss";
 @import "blocks/program-form.scss";
-@import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/additionally-footer.scss";
-@import "blocks/socials.scss";
 @import "blocks/developer.scss";
