@@ -9,7 +9,8 @@
 }
 
 .additional-product__title {
-  margin: 0 0 10px;
+  margin: 0;
+  margin-bottom: 10px;
 
   @include oswald-regular();
   font-size: $additional-product__title-fs;

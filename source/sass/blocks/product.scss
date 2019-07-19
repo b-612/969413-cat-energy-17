@@ -11,7 +11,8 @@
 
 .product__title {
   width: 100px;
-  margin: 0 0 8px;
+  margin: 0;
+  margin-bottom: 8px;
 
   @include oswald-regular();
   font-size: $product__title-fs;
