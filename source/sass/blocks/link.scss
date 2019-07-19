@@ -2,7 +2,7 @@
   display: block;
   padding: 10px 20px;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $link-fs;
   line-height: $link-lh;
   text-transform: uppercase;

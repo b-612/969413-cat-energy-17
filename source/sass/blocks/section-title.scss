@@ -1,7 +1,7 @@
 .section-title {
   margin-top: 0;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $section-title-fs;
   line-height: $section-title-lh;
 }

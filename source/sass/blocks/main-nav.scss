@@ -1,5 +1,5 @@
 .main-nav__link {
-  @include oswald-medium();
+  font-family: $oswald-medium;
   font-size: $main-nav-fs;
   line-height: $main-nav-lh;
   color: $font-dark;

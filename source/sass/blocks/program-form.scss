@@ -21,7 +21,7 @@
 .program-form__label {
   display: block;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $program-form__label-fs;
   line-height: $program-form__label-lh;
   text-transform: uppercase;
@@ -33,14 +33,14 @@
   text-transform: uppercase;
 
   &::-webkit-input-placeholder {
-    @include oswald-regular();
+    font-family: $oswald-regular;
     font-size: $program-form__label-fs;
     line-height: $program-form__label-lh;
     color: $font-dark-gray;
   }
 
   &:-moz-placeholder {
-    @include oswald-regular();
+    font-family: $oswald-regular;
     font-size: $program-form__label-fs;
     line-height: $program-form__label-lh;
     color: $font-dark-gray;

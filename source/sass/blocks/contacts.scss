@@ -7,7 +7,7 @@
 }
 
 .contacts__slogan {
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $contacts__slogan-fs;
   line-height: $contacts__slogan-lh;
   color: $font-dark;

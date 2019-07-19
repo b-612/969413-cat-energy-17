@@ -9,7 +9,7 @@
   margin: 0 auto;
   margin-bottom: 15px;
 
-  @include text();
+  font-family: $arial;
   font-size: $gifts__text-fs;
   line-height: $gifts__text-lh;
   color: $font-light;

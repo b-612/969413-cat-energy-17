@@ -12,7 +12,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $additional-product__title-fs;
   line-height: $additional-product__title-lh;
   color: $font-dark;

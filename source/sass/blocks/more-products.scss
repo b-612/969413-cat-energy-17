@@ -6,7 +6,7 @@
 }
 
 .more-products__title {
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $more-products__title-fs;
   line-height: $more-products__title-lh;
   color: $font-dark;

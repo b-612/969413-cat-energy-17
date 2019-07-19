@@ -23,7 +23,7 @@
 .proposition__slogan {
   margin: 15px 0;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $proposition__slogan-fs;
   line-height: $proposition__slogan-lh;
   text-transform: uppercase;

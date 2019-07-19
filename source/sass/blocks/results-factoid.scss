@@ -6,7 +6,7 @@
 .results-factoid__value,
 .results-factoid__cost,
 .results-factoid__was-became {
-  @include oswald-regular();
+  font-family: $oswald-regular;
   text-transform: uppercase;
 }
 

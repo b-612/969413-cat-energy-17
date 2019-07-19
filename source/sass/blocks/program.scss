@@ -11,7 +11,7 @@
 
 .program__title,
 .program__more {
-  @include oswald-regular();
+  font-family: $oswald-regular;
   text-transform: uppercase;
   color: $font-dark;
 }

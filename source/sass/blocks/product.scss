@@ -14,7 +14,7 @@
   margin: 0;
   margin-bottom: 8px;
 
-  @include oswald-regular();
+  font-family: $oswald-regular;
   font-size: $product__title-fs;
   line-height: $product__title-lh;
   color: $font-dark;
