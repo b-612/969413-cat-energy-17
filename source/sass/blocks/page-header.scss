@@ -1,3 +1,5 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   border-bottom: $nav-border;
 }

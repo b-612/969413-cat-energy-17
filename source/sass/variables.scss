@@ -1,6 +1,10 @@
-$oswald-medium: "Oswald Medium", "Arial", "Helvetica", sans-serif;
-$oswald-regular: "Oswald Regular", "Arial", "Helvetica", sans-serif;
-$arial: "Arial", "Helvetica", sans-serif;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width:1440px;
+
+$oswald-medium: ("Oswald Medium", "Arial", "Helvetica", sans-serif);
+$oswald-regular: ("Oswald Regular", "Arial", "Helvetica", sans-serif);
+$arial: ("Arial", "Helvetica", sans-serif);
 
 $text-fs: 14px;
 $text-lh: 1.3;

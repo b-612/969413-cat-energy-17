@@ -34,7 +34,8 @@ html {
 }
 
 body {
-  margin: 0;
+  min-width: $mobile-width;
+  margin: 0 auto;
   overflow: hidden;
 
   font-family: $arial;
