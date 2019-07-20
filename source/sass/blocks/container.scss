@@ -1,5 +1,18 @@
 .container {
-  padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -1,3 +1,25 @@
 .programs__link {
+  width: auto;
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link {
+    margin-bottom: 645px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    width: 570px;
+
+    &:not(:last-of-type) {
+      margin-right: 80px;
+    }
+  }
 }
