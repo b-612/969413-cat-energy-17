@@ -1,0 +1,26 @@
+.more-products {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: $product-border;
+  border-top: none;
+}
+
+.more-products__title {
+  font-family: $oswald-regular;
+  font-size: $more-products__title-fs;
+  line-height: $more-products__title-lh;
+  color: $font-dark;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-products__slogan {
+  font-size: $more-products__slogan-fs;
+  line-height: $more-products__slogan-lh;
+}
+
+.more-products__link {
+  color: $font-gray;
+
+  background-color: $bg-block;
+}

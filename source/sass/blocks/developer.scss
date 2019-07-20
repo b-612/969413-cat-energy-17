@@ -1,0 +1,6 @@
+.developer__text {
+  @include text();
+  font-size: $developer__text-fs;
+  line-height: $developer__text-lh;
+  color: $font-gray;
+}

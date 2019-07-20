@@ -1,0 +1,40 @@
+.program {
+  margin-bottom: 20px;
+  padding: 30px 20px 22px;
+
+  background-color: $bg-block;
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
+}
+
+.program__title,
+.program__more {
+  font-family: $oswald-regular;
+  text-transform: uppercase;
+  color: $font-dark;
+}
+
+.program__title {
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 30px;
+
+  font-size: $program__title-fs;
+  line-height: $program__title-lh;
+}
+
+.program__description {
+  margin: 15px 0 20px;
+  padding-bottom: 22px;
+  border-bottom: $bg-block-border;
+}
+
+
+.program__more {
+  display: block;
+
+  font-size: $program__more-fs;
+  line-height: $program__more-fs;
+}

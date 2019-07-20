@@ -1,0 +1,17 @@
+.gifts {
+  min-height: 289px; /*Возможно, временно*/
+
+  background-image: $gifts-bg-img-m;
+}
+
+.gifts__text {
+  width: 147px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  font-family: $arial;
+  font-size: $gifts__text-fs;
+  line-height: $gifts__text-lh;
+  color: $font-light;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.contacts {
+  background-color: $bg-block;
+
+  &--light {
+    background-color: $bg-body;
+  }
+}
+
+.contacts__slogan {
+  font-family: $oswald-regular;
+  font-size: $contacts__slogan-fs;
+  line-height: $contacts__slogan-lh;
+  color: $font-dark;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include text();
+  font-size: $contacts__address-fs;
+  line-height: $contacts__address-lh;
+}
+
+.contacts__map {
+  position: relative;
+
+  height: 362px;
+}
+
+.contacts__iframe {
+  position: absolute;
+}

@@ -1,0 +1,30 @@
+.results-factoid__name {
+  font-size: $results-factoid__name-fs;
+  line-height: $results-factoid__name-lh;
+}
+
+.results-factoid__value,
+.results-factoid__cost,
+.results-factoid__was-became {
+  font-family: $oswald-regular;
+  text-transform: uppercase;
+}
+
+.results-factoid__value {
+  font-size: $results-factoid__value-fs;
+  line-height: $results-factoid__value-lh;
+  color: $font-dark;
+  text-align: center;
+}
+
+.results-factoid__cost {
+  font-size: $results-factoid__cost-fs;
+  line-height: $results-factoid__cost-lh;
+  color: $font-dark;
+  text-align: center;
+}
+
+.results-factoid__was-became {
+  font-size: $results-factoid__was-became-fs;
+  line-height: $results-factoid__was-became-lh;
+}

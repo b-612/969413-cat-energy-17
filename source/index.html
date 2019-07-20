@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy - Функциональное питание для котов</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="global-container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Cat Energy - функциональное питание для котов. Логотип - кот" width="33" height="38">
-      </a>
-      <a class="page-header__logo">
-        <img class="page-header__logo-inscription" src="http://placehold.it/150x100" alt="Cat Energy - функциональное питание для котов. Логотип - надпись" width="33" height="38">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__top container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Cat Energy - функциональное питание для котов. Логотип - кот" width="33" height="38">
+        </a>
+        <a class="page-header__logo">
+          <img class="page-header__logo-inscription" src="http://placehold.it/150x100" alt="Cat Energy - функциональное питание для котов. Логотип - надпись" width="33" height="38">
+        </a>
         <button class="main-nav__toggle main-nav__toggle--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a>Главная</a>
+            <li class="main-nav__item container">
+              <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item container">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="program-form.html">Подбор программы</a>
+            <li class="main-nav__item container">
+              <a class="main-nav__link" href="program-form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -34,52 +37,51 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Cat Energy - Интернет-магазин функционального питания для котов</h1>
-      <section class="proposition">
+      <section class="proposition container">
         <h2 class="proposition__title section-title">Функциональное питание для котов</h2>
         <p class="proposition__slogan">Занялся собой? Займись котом!</p>
         <img class="proposition__image" src="http://placehold.it/150x100" alt="Банка Cat Energy Pro. Курица. 500 грамм" width="280" height="270">
       </section>
-      <section class="program">
+      <section class="programs container">
         <h2 class="visually-hidden">Программы питания для котов</h2>
-        <a class="program__link link" href="program-form.html">Подобрать программу</a>
-        <ul class="program__list">
-          <li class="program__item program">
+        <a class="programs__link link" href="program-form.html">Подобрать программу</a>
+        <ul class="programs__list site-list">
+          <li class="programs__item program">
             <h3 class="program__title">Похудение</h3>
             <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program__more" href="#">Каталог Slim</a>
           </li>
-          <li class="program__item program">
+          <li class="programs__item program">
             <h3 class="program__title">Набор массы</h3>
             <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="program__more" href="#">Каталог pro</a>
           </li>
         </ul>
       </section>
-      <section class="how-it-works">
+      <section class="how-it-works container">
         <h2 class="how-it-works__title section-title">Как это работает</h2>
-        <ul class="how-it-works__list">
+        <ul class="how-it-works__list site-list">
           <li class="how-it-works__item">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="how-it-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="how-it-works__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
           <li class="how-it-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ul>
       </section>
-      <section class="example">
+      <section class="example container">
         <h2 class="example__title section-title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__results-factoid results-factoid">
           <div class="results-factoid__top">
             <div class="results-factoid__item">
               <span class="results-factoid__name">снижение веса</span>
-              <span class="results-table__value">5 кг</span>
+              <span class="results-factoid__value">5 кг</span>
             </div>
             <div class="results-factoid__item">
               <span class="results-factoid__name">затрачено времени</span>
               <span class="results-factoid__value">60 дней</span>
             </div>
             <div class="results-factoid__price-item">
-              <span class="results-factoid__cost">Затраты на питание:</span>
-              <span class="results-factoid__price">15 000 руб.</span>
+              <span class="results-factoid__cost">Затраты на питание: 15 000 руб.</span>
             </div>
           </div>
           <img class="results-factoid__image results-factoid__image--before" src="http://placehold.it/150x100" alt="Пример кота до прохождения программы Cat Energy Slim" width="311" height="232">
@@ -97,22 +99,22 @@
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Дополнительная информация и контакты</h2>
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts contacts contacts--light">
         <h3 class="visually-hidden">Адрес</h3>
-        <div class="contacts__top">
+        <div class="contacts__top container">
           <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.61835327442!2d30.32237619197178!3d59.93872451148935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1562943575634!5m2!1sru!2sru" width="600" height="450" allowfullscreen aria-label="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.61835327442!2d30.32237619197178!3d59.93872451148935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1562943575634!5m2!1sru!2sru" width="320" height="362" aria-label="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
           <img class="contacts__map-image" src="http://placehold.it/150x100" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
         </div>
       </section>
-      <section class="page-footer__additionally additionally-footer">
+      <section class="page-footer__additionally additionally-footer container">
         <h3 class="visually-hidden">Дополнительная информация</h3>
         <a class="additionally-footer__logo" href="#"><img class="additionally-footer__logo-inscription" src="http://placehold.it/150x100" alt="Cat Energy - функциональное питание для котов. Логотип - надпись" width="33" height="38">
         </a>
-        <ul class="additionally-footer__socials socials">
+        <ul class="additionally-footer__socials socials site-list">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="#">
               <span class="visually-hidden">Вконтакте</span>

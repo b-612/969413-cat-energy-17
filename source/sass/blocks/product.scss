@@ -1,0 +1,22 @@
+.product {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border: $product-border;
+  border-top: none;
+
+  &:first-of-type {
+    border-top: $product-border;
+  }
+}
+
+.product__title {
+  width: 100px;
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: $oswald-regular;
+  font-size: $product__title-fs;
+  line-height: $product__title-lh;
+  color: $font-dark;
+  text-transform: uppercase;
+}

@@ -1,0 +1,35 @@
+.proposition {
+  position: relative;
+
+  min-height: 305px;
+  margin-bottom: 135px;
+  padding-top: 27px;
+  background-image: $proposition-bg-img-m;
+}
+
+
+.proposition__title {
+  margin-bottom: 25px;
+
+  line-height: $proposition__title-lh;
+}
+
+.proposition__title,
+.proposition__slogan {
+  color: $font-light;
+  text-align: center;
+}
+
+.proposition__slogan {
+  margin: 15px 0;
+
+  font-family: $oswald-regular;
+  font-size: $proposition__slogan-fs;
+  line-height: $proposition__slogan-lh;
+  text-transform: uppercase;
+}
+
+.proposition__image {
+  position: absolute;
+  top: 167px;
+}

@@ -1,0 +1,19 @@
+.link {
+  display: block;
+  padding: 10px 20px;
+
+  font-family: $oswald-regular;
+  font-size: $link-fs;
+  line-height: $link-lh;
+  text-transform: uppercase;
+  text-align: center;
+  color: $font-light;
+
+  background-color: $bg-accent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $bg-accent-hover;
+  }
+}

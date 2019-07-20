@@ -1,0 +1,20 @@
+.additional-product {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-bottom: $other-border;
+
+  &:first-of-type {
+    border-top: $other-border;
+  }
+}
+
+.additional-product__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: $oswald-regular;
+  font-size: $additional-product__title-fs;
+  line-height: $additional-product__title-lh;
+  color: $font-dark;
+  text-transform: uppercase;
+}
