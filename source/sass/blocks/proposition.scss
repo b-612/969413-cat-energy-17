@@ -76,3 +76,23 @@
     height: 609px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .proposition__image-wrapper {
+    right: 0;
+    left: auto;
+
+    background-color: $bg-accent;
+    background-image: $proposition-bg-img-d;
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+  }
+
+  .proposition__image {
+    top: 100px;
+    left: 215px;
+
+    width: 552px;
+    height: 499px;
+  }
+}

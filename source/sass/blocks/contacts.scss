@@ -33,7 +33,7 @@
   height: 362px;
 }
 
-@media (min-width: 1220px) {
+@media (min-width: $desktop-width) {
   .contacts {
     position: relative;
   }
