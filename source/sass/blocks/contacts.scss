@@ -15,7 +15,7 @@
 }
 
 .contacts__address {
-  @include text();
+  font-family: $arial;
   font-size: $contacts__address-fs;
   line-height: $contacts__address-lh;
 }
