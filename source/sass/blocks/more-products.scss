@@ -24,3 +24,17 @@
 
   background-color: $bg-block;
 }
+
+@media (min-width: $tablet-width) {
+  .more-products {
+    width: 324px;
+    margin-bottom: 95px;
+    border-top: $product-border;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-products {
+    width: 245px;
+  }
+}
