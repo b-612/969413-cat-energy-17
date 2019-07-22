@@ -1,9 +1,5 @@
 .page-header {
-  border-bottom: $nav-border;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    flex-direction: row;
+  @media (max-width: $mobile-max-width) {
+    border-bottom: $nav-border;
   }
 }

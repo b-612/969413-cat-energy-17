@@ -1,7 +1,9 @@
 .proposition {
   position: relative;
 
-  margin-bottom: 310px;
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 310px;
+  }
   padding-top: 27px;
 }
 
@@ -15,8 +17,10 @@
 
 .proposition__title,
 .proposition__slogan {
-  color: $font-light;
-  text-align: center;
+  @media (max-width: $mobile-max-width) {
+    color: $font-light;
+    text-align: center;
+  }
 }
 
 .proposition__slogan {
@@ -37,11 +41,14 @@
   left: 0;
   z-index: -1;
 
-  width: 320px;
-  height: 305px;
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+    height: 305px;
 
-  background-color: $bg-accent;
-  background-image: $proposition-bg-img-m;
+    background-color: $bg-accent;
+    background-image: $proposition-bg-img-m;
+  }
+
   background-repeat: no-repeat;
 }
 
@@ -56,11 +63,7 @@
   transform: translateX(-50%);
 }
 
-@media (min-width: $tablet-width) {
-  .proposition {
-    margin-bottom: 0;
-  }
-
+@media (min-width: $tablet-min-width) {
   .proposition__title,
   .proposition__slogan {
     color: $font-dark;
@@ -80,12 +83,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-min-width) {
   .proposition__image-wrapper {
     right: 0;
     left: auto;
 
-    background-color: $bg-accent;
     background-image: $proposition-bg-img-d;
     background-repeat: no-repeat;
     background-size: 720px 696px;

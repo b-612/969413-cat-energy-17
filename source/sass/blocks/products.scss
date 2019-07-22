@@ -1,15 +1,20 @@
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-min-width) {
   .products__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -65px; /* Валя, можно так? Или какое-то другое решиние лучше? */
+    margin-left: 20px;
+    margin-right: -40px;
+
+    @media (max-width: $mobile-max-width) {
+      margin-bottom: -65px;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-min-width) {
   .products__list {
     margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: -55px; /* Валя, можно так? Или какое-то другое решиние лучше? */
+    margin-right: -60px;
+    margin-bottom: -55px;
   }
 }
