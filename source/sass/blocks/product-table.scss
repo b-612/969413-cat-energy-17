@@ -1,5 +1,5 @@
 .product-table {
-  @include text();
+  font-family: $arial;
   font-size: $product-table-fs;
   line-height: $product-table-lh;
   color: $font-gray;

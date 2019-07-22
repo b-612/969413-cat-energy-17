@@ -11,6 +11,7 @@
 .proposition__title {
   margin-bottom: 25px;
 
+  font-weight: normal;
   line-height: $proposition__title-lh;
 }
 
@@ -21,7 +22,10 @@
 }
 
 .proposition__slogan {
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-right: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
 
   font-family: $oswald-regular;
   font-size: $proposition__slogan-fs;
