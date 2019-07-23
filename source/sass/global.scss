@@ -10,8 +10,7 @@ html {
 }
 
 body {
-  margin: 0;
-  overflow: hidden;
+  min-width: $mobile-min-width;
 
   font-family: $arial;
   font-size: $text-fs;

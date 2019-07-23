@@ -1,8 +1,11 @@
 .more-products {
   padding-top: 22px;
-  padding-bottom: 22px;
   border: $product-border;
-  border-top: none;
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 22px;
+    border-top: none;
+  }
 }
 
 .more-products__title {
@@ -23,4 +26,20 @@
   color: $font-gray;
 
   background-color: $bg-block;
+}
+
+@media (min-width: $tablet-min-width) {
+  .more-products {
+    @media (max-width: $tablet-max-width) {
+      width: 324px;
+    }
+
+    margin-bottom: 95px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .more-products {
+    width: 245px;
+  }
 }
