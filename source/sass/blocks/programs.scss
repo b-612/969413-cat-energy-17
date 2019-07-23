@@ -1,5 +1,11 @@
+.programs__list {
+  @media (max-width: $mobile-max-width) {
+    @include margin-to-container();
+  }
+}
+
 .programs__link {
-  width: auto;
+  @include margin-to-container();
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 22px;

@@ -1,3 +1,4 @@
-@mixin test-mixin() {
-  background-color: rgba(177, 91, 91, 0.2);
+@mixin margin-to-container() {
+  margin-left: 20px;
+  margin-right: 20px;
 }
