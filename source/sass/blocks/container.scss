@@ -4,16 +4,12 @@
   @media (max-width: $mobile-max-width) {
     width: 320px;
   }
-}
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-  .container {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     width: 768px;
   }
-}
 
-@media (min-width: $desktop-min-width) {
-  .container {
-    width: 1440px;
+  @media (min-width: $desktop-min-width) {
+    max-width: 1440px;
   }
 }
