@@ -1,17 +1,24 @@
 .main-nav__link {
-  font-family: $oswald-medium;
-  font-size: $main-nav-fs;
-  line-height: $main-nav-lh;
-  color: $font-dark;
+  @media (max-width: $mobile-max-width) {
+    font-family: $oswald-medium;
+    font-size: $main-nav-fs-m;
+    line-height: $main-nav-lh-m;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    color: $font-dark;
+  }
+
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    color: rgba($font-dark, 0.6);
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba($font-dark, 0.3);
+    opacity: 0.3;
   }
 }
 
@@ -32,8 +39,87 @@
 }
 
 .main-nav__item {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  text-align: center;
-  border-top: $nav-border;
+  @media (max-width: $mobile-max-width) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    text-align: center;
+    border-top: $nav-border;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-nav {
+    flex-shrink: 0;
+    margin-left: auto;
+
+    @media (max-width: $tablet-max-width) {
+      max-width: 516px;
+    }
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 27px;
+  }
+
+  .main-nav__item {
+    @media (max-width: $tablet-max-width) {
+      margin-left: 36px;
+      padding-top: 15px;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    padding-bottom: 7px;
+
+    font-family: $oswald-regular;
+
+    @media (max-width: $tablet-max-width) {
+      font-size: $main-nav-fs-t;
+      line-height: $main-nav-lh-t;
+    }
+
+    &--current {
+      border-bottom: 2px solid $bg-accent;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-nav {
+    max-width: 590px;
+  }
+
+  .main-nav__list {
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    margin-left: 35px;
+    padding-top: 20px;
+  }
+
+  .main-nav__link {
+    font-size: $main-nav-fs-d;
+    line-height: $main-nav-lh-d;
+    color: $font-light;
+
+    &:hover,
+    &:focus {
+      color: $font-light;
+    }
+
+    &:active {
+      color: $font-light;
+    }
+
+    &--current {
+      border-bottom: 3px solid $font-light;
+    }
+  }
 }

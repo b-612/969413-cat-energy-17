@@ -28,3 +28,45 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-max-width) {
+    width: 280px;
+
+    &--header {
+      width: 320px;
+    }
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    &--header {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 1220px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

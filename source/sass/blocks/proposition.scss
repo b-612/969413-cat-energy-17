@@ -84,9 +84,16 @@
 }
 
 @media (min-width: $desktop-min-width) {
+  .proposition {
+    position: static;
+  }
+
   .proposition__image-wrapper {
-    right: 0;
-    left: auto;
+    top: 0;
+    left: 50%;
+
+    width: 720px;
+    height: 696px;
 
     background-image: $proposition-bg-img-d;
     background-repeat: no-repeat;
@@ -94,8 +101,8 @@
   }
 
   .proposition__image {
-    top: 100px;
-    left: 145px;
+    top: 142px;
+    left: 116px;
 
     width: 552px;
     height: 499px;
