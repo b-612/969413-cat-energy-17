@@ -1,3 +1,9 @@
+.programs {
+  @media (min-width: $desktop-min-width) {
+    padding-top: 45px;
+  }
+}
+
 .programs__list {
   @media (min-width: $desktop-min-width) {
     display: flex;
@@ -9,7 +15,7 @@
   @media (min-width: $desktop-min-width) {
     width: 570px;
 
-    &:not(:last-of-type) {
+    &:not(:nth-of-type(2n)) {
       margin-right: 80px;
     }
   }

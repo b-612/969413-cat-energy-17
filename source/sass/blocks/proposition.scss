@@ -33,7 +33,7 @@
     @media (max-width: $tablet-max-width) {
       margin-bottom: 20px;
       width: 490px;
-      margin-left: 117px;
+      margin-left: 85px;
     }
   }
 
@@ -112,7 +112,7 @@
   @media (min-width: $tablet-min-width) {
     position: absolute;
     bottom: 535px;
-    left: 120px;
+    left: 90px;
 
     font-size: $proposition__link-fs-td;
     line-height: $proposition__link-lh-t;
@@ -141,7 +141,7 @@
     @media (max-width: $tablet-max-width) {
       width: 709px;
       height: 609px;
-      margin: 0 30px;
+      margin: 0 auto;
     }
   }
 
@@ -156,7 +156,6 @@
 .proposition__background {
   position: absolute;
   top: 0;
-  left: 0;
   z-index: -1;
 
   background-repeat: no-repeat;
@@ -164,12 +163,15 @@
   background-image: $proposition-bg-img-m;
 
   @media (max-width: $mobile-max-width) {
+    left: 0;
     width: 320px;
     min-height: 305px;
   }
 
   @media (min-width: $tablet-min-width) {
     @media (max-width: $tablet-max-width) {
+     left: 30px;
+
       width: 709px;
       height: 609px;
 
