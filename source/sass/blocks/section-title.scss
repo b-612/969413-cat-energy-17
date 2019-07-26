@@ -2,6 +2,14 @@
   margin-top: 0;
 
   font-family: $oswald-regular;
-  font-size: $section-title-fs;
-  line-height: $section-title-lh;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: $section-title-fs-m;
+    line-height: $section-title-lh-m;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    font-size: $section-title-fs-td;
+    line-height: $section-title-lh-td;
+  }
 }

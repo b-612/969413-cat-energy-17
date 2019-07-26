@@ -1,30 +1,12 @@
 .programs__list {
-  @media (max-width: $mobile-max-width) {
-    @include margin-to-container();
-  }
-}
-
-.programs__link {
-  @include margin-to-container();
-
-  @media (max-width: $mobile-max-width) {
-    margin-bottom: 22px;
-  }
-}
-
-@media (min-width: $tablet-min-width) {
-  .programs__link {
-    margin-bottom: 645px;
-  }
-}
-
-@media (min-width: $desktop-min-width) {
-  .programs__list {
+  @media (min-width: $desktop-min-width) {
     display: flex;
     flex-wrap: wrap;
   }
+}
 
-  .programs__item {
+.programs__item {
+  @media (min-width: $desktop-min-width) {
     width: 570px;
 
     &:not(:last-of-type) {

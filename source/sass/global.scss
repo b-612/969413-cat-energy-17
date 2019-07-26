@@ -30,6 +30,8 @@ img {
 }
 
 .container {
+  position: relative;
+
   margin: 0 auto;
 
   @media (max-width: $mobile-max-width) {
@@ -37,17 +39,24 @@ img {
 
     &--header {
       width: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    width: 708px;
-  }
-
   @media (min-width: $tablet-min-width) {
+    @media (max-width: $tablet-max-width) {
+      width: 768px;
+    }
+
     &--header {
       display: flex;
       flex-wrap: wrap;
+
+      @media (max-width: $tablet-max-width) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
   }
 
