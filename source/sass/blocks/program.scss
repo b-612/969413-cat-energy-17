@@ -235,11 +235,13 @@
 
   @media (max-width: $mobile-max-width) {
     max-width: 195px;
+    font-size: $program__more-fs;
+    line-height: $program__more-lh;
   }
 
   @media (min-width: $tablet-min-width) {
     font-size: $program__more-fs-td;
-    line-height: $program__more-fs-td;
+    line-height: $program__more-lh-td;
 
     @media (max-width: $tablet-max-width) {
       max-width: 265px;
