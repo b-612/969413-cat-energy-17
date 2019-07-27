@@ -5,3 +5,47 @@
 .how-it-works__title {
   margin-bottom: 28px;
 }
+
+.how-it-works__item {
+  position: relative;
+
+  @media (max-width: $mobile-max-width) {
+    width: 200px;
+    margin-left: 80px;
+    margin-bottom: 27px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: -80px;
+
+    background-color: $bg-accent;
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-max-width) {
+      width: 60px;
+      height: 60px;
+
+      background-position: 5px 6px;
+    }
+  }
+
+  &--benefit::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--dining::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--weight-changes::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+}
