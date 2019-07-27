@@ -18,6 +18,11 @@ body {
   color: $font-gray;
 
   background-color: $bg-body;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: $text-fs-td;
+    line-height: $text-lh-td;
+  }
 }
 
 a {

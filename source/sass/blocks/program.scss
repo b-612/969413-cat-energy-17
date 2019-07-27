@@ -1,10 +1,18 @@
 .program {
   background-color: $bg-block;
 
-  &:last-child {
-    @media (max-width: $mobile-max-width) {
-      margin-bottom: 18px;
-    }
+  @media (max-width: $mobile-max-width) {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 38px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+    padding-right: 55px;
   }
 
   &--weight-loss {
@@ -76,22 +84,6 @@
         width: 340px;
       }
     }
-  }
-
-  @media (max-width: $mobile-max-width) {
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-bottom: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: $tablet-min-width) {
-    margin-bottom: 30px;
-    padding-top: 38px;
-    padding-bottom: 60px;
-    padding-left: 52px;
-    padding-right: 55px;
   }
 }
 
