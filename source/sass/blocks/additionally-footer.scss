@@ -5,13 +5,23 @@
 
   @media (max-width: $mobile-max-width) {
     padding-top: 38px;
+    padding-bottom: 10px;
   }
 
+  @media (min-width: $tablet-min-width) {
+    padding-top: 53px;
+    padding-bottom: 48px;
+  }
 
   .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-max-width) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -20,5 +30,9 @@
     width: 100%;
     margin-bottom: 28px;
     text-align: center;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 162px;
   }
 }

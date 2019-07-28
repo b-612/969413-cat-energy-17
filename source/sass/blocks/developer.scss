@@ -3,18 +3,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 162px;
+  }
 }
 
 .developer__text {
   color: $font-gray;
   font-family: $arial;
+  font-size: $developer__text-fs;
+  line-height: $developer__text-lh;
 
   @media (max-width: $mobile-max-width) {
     max-width: 235px;
-    font-size: $developer__text-fs-m;
-    line-height: $developer__text-lh-m;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 125px;
   }
 }
