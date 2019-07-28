@@ -1,6 +1,20 @@
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
 .developer__text {
-  font-family: $arial;
-  font-size: $developer__text-fs;
-  line-height: $developer__text-lh;
   color: $font-gray;
+  font-family: $arial;
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 235px;
+    font-size: $developer__text-fs-m;
+    line-height: $developer__text-lh-m;
+  }
 }

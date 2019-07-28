@@ -1,3 +1,24 @@
 .additionally-footer {
+  position: relative;
+
   background-color: $bg-block;
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 38px;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.additionally-footer__logo {
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 28px;
+    text-align: center;
+  }
 }
