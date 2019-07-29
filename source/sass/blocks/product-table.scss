@@ -1,6 +1,44 @@
 .product-table {
+  flex-shrink: 0;
+  border-collapse: collapse;
+
   font-family: $arial;
   font-size: $product-table-fs;
   line-height: $product-table-lh;
   color: $font-gray;
+
+  @media (max-width: $mobile-max-width) {
+    border: none;
+  }
+}
+
+.product-table__caption {
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 7px;
+
+    text-align: left;
+  }
+}
+
+.product-table__title {
+  width: 100px;
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-family: $oswald-regular;
+  font-weight: normal;
+  font-size: $product__title-fs;
+  line-height: $product__title-lh;
+  color: $font-dark;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.product-table__indicator,
+.product-table__value {
+  padding: 0;
+}
+
+.product-table__value {
+  text-align: right;
 }

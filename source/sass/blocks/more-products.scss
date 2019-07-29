@@ -1,5 +1,7 @@
 .more-products {
   padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: $product-border;
 
   @media (max-width: $mobile-max-width) {
@@ -15,17 +17,47 @@
   color: $font-dark;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 0.2;
+
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-max-width) {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 25px;
+
+
+      background-image: url("../../img/icon-plus-mobile.svg");
+    }
+  }
 }
 
 .more-products__slogan {
   font-size: $more-products__slogan-fs;
   line-height: $more-products__slogan-lh;
+  text-align: center;
 }
 
 .more-products__link {
   color: $font-gray;
 
   background-color: $bg-block;
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: 23px;
+  }
 }
 
 @media (min-width: $tablet-min-width) {
