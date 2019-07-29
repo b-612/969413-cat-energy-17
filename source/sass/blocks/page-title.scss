@@ -1,6 +1,13 @@
 .page-title {
-  margin-top: 15px;
-  margin-bottom: 28px;
+  @media (max-width: $mobile-max-width) {
+    margin-top: 15px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 37px;
+    margin-bottom: 166px;
+  }
 
   &--form {
     margin-bottom: 25px;

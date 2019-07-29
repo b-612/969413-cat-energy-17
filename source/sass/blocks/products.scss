@@ -10,13 +10,27 @@
   @media (min-width: $tablet-min-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: -40px;
   }
 
   @media (min-width: $desktop-min-width) {
     margin-left: 20px;
     margin-right: -60px;
     margin-bottom: -55px;
+  }
+}
+
+.products__item {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 140px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 60px;
+    }
+  }
+}
+
+.products__more-products {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 140px;
   }
 }
