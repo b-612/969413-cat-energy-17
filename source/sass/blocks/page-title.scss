@@ -5,8 +5,15 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    margin-top: 37px;
     margin-bottom: 166px;
+
+    @media (max-width: $tablet-max-width) {
+      margin-top: 37px;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 44px;
   }
 
   &--form {

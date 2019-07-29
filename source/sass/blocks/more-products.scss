@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    width: 220px;
+    width: 170px;
 
     font-size: $more-products__slogan-fs-td;
     line-height: $more-products__slogan-lh-td;
@@ -99,7 +99,7 @@
 .more-products__link {
   color: $font-gray;
 
-  background-color: $bg-block;
+  background-color: $more-products__link-bg;
 
   @media (max-width: $mobile-max-width) {
     margin-top: 23px;
@@ -111,5 +111,14 @@
 
     font-size: $product__link-fs;
     line-height: $product__link-lh;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $more-products__link-bg-hv;
+  }
+
+  &:active {
+    color: rgba($font-gray, 0.3);
   }
 }
