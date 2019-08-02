@@ -1,10 +1,8 @@
 .how-it-works {
   padding-bottom: 42px;
 
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      padding-top: 10px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -35,13 +33,11 @@
     margin-bottom: 27px;
   }
 
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      margin-bottom: 96px;
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 96px;
 
-      &:not(:nth-of-type(2n)) {
-        margin-right: 60px;
-      }
+    &:not(:nth-of-type(2n)) {
+      margin-right: 60px;
     }
   }
 

@@ -16,11 +16,11 @@
 .products__item {
   @media (min-width: $tablet-min-width) {
     margin-bottom: 140px;
+  }
 
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     &:not(:nth-child(2n)) {
-      @media (max-width: $tablet-max-width) {
-        margin-right: 60px;
-      }
+      margin-right: 60px;
     }
   }
 

@@ -2,10 +2,10 @@
   @media (min-width: $tablet-min-width) {
     flex-shrink: 0;
     margin-left: auto;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      max-width: 516px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    max-width: 516px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -58,13 +58,11 @@
     border-top: $nav-border;
   }
 
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      padding-top: 15px;
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 15px;
 
-      &:not(:first-of-type) {
-        margin-left: 36px;
-      }
+    &:not(:first-of-type) {
+      margin-left: 36px;
     }
   }
 
@@ -105,13 +103,12 @@
     &--current {
       border-bottom: 2px solid $bg-accent;
     }
-
-    @media (max-width: $tablet-max-width) {
-      font-size: $main-nav-fs-t;
-      line-height: $main-nav-lh-t;
-    }
   }
 
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    font-size: $main-nav-fs-t;
+    line-height: $main-nav-lh-t;
+  }
 
   @media (min-width: $desktop-min-width) {
     font-size: $main-nav-fs-d;
@@ -141,6 +138,10 @@
     margin-right: 0;
 
     background-image: url("../../img/icon-mobile-menu.svg");
+  }
+
+  &--no-js {
+    display: none;
   }
 
   @media (min-width: $tablet-min-width) {

@@ -1,21 +1,30 @@
 .page-header {
-  @media (max-width: $mobile-max-width) {
-    border-bottom: $nav-border;
-  }
-
   @media (min-width: $tablet-min-width) {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      padding-top: 24px;
-      padding-bottom: 20px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-min-width) {
     padding-top: 54px;
     padding-bottom: 30px;
+  }
+
+  .container {
+    @media (max-width: $mobile-max-width) {
+      width: 320px;
+
+      border-bottom: $nav-border;
+    }
+
+    @media (min-width: $tablet-min-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }
 

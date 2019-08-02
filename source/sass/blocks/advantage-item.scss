@@ -1,5 +1,6 @@
 .advantage-item {
   position: relative;
+  counter-increment: numAdvantage;
 
   @media (max-width: $mobile-max-width) {
     width: 200px;
@@ -9,12 +10,9 @@
     min-height: 220px;
     padding-top: 103px;
 
-    @media (max-width: $tablet-max-width) {
-      width: 324px;
-      padding-right: 60px;
-    }
-
     &::after {
+      content: counter(numAdvantage);
+
       position: absolute;
       top: -118px;
       left: 117px;
@@ -24,22 +22,11 @@
       font-size: 281px;
       color: $bg-block;
     }
+  }
 
-    &--benefit::after {
-      content: "1";
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--dining::after {
-      content: "3";
-    }
-
-    &--weight-changes::after {
-      content: "4";
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 324px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -78,6 +65,7 @@
 
   &--benefit::before {
     background-image: url("../../img/advantage-leaf@1x.png");
+    background-size: 50px 50px;
   }
 
   &--powder::before {

@@ -14,10 +14,10 @@
     padding-bottom: 38px;
     padding-left: 35px;
     padding-right: 35px;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      width: 324px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 324px;
   }
 
   @media (min-width: $desktop-min-width) {

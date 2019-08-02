@@ -27,14 +27,12 @@
         height: 49px;
       }
 
-      @media (min-width: $tablet-min-width) {
-        @media (max-width: $tablet-max-width) {
-          top: 3px;
-          left: 425px;
+      @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        top: 3px;
+        left: 425px;
 
-          width: 140px;
-          height: 194px;
-        }
+        width: 140px;
+        height: 194px;
       }
 
       @media (min-width: $desktop-min-width) {
@@ -59,14 +57,12 @@
         height: 28px;
       }
 
-      @media (min-width: $tablet-min-width) {
-        @media (max-width: $tablet-max-width) {
-          top: 60px;
-          left: 360px;
+      @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+        top: 60px;
+        left: 360px;
 
-          width: 268px;
-          height: 112px;
-        }
+        width: 268px;
+        height: 112px;
       }
 
       @media (min-width: $desktop-min-width) {
@@ -78,9 +74,9 @@
       }
     }
 
-    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-      .program__title,
-      .program__description {
+    .program__title,
+    .program__description {
+      @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
         width: 340px;
       }
     }
@@ -96,10 +92,8 @@
 
 .program__title,
 .program__description {
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      width: 375px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 375px;
   }
 }
 
@@ -129,13 +123,11 @@
       height: 50px;
     }
 
-    @media (min-width: $tablet-min-width) {
-      @media (max-width: $tablet-max-width) {
-        top: 15px;
-        left: 396px;
-        width: 200px;
-        height: 200px;
-      }
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      top: 15px;
+      left: 396px;
+      width: 200px;
+      height: 200px;
     }
 
     @media (min-width: $desktop-min-width) {
@@ -158,10 +150,10 @@
   @media (min-width: $tablet-min-width) {
     font-size: $program__title-fs-td;
     line-height: $program__title-lh-td;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      margin-bottom: 25px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -234,11 +226,11 @@
   @media (min-width: $tablet-min-width) {
     font-size: $program__more-fs-td;
     line-height: $program__more-lh-td;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      max-width: 265px;
-      margin-top: 35px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    max-width: 265px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktop-min-width) {

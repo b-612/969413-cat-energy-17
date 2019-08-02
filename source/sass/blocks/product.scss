@@ -24,10 +24,10 @@
     padding-bottom: 39px;
 
     background-color: $bg-block;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      width: 324px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 324px;
   }
 
   @media (min-width: $desktop-min-width) {

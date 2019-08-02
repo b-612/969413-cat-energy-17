@@ -58,10 +58,8 @@
     width: 140px;
   }
 
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      width: 315px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 315px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -100,10 +98,10 @@
 
     font-size: $contacts__address-fs-td;
     line-height: $contacts__address-lh-td;
+  }
 
-    @media (max-width: $tablet-max-width) {
-      text-align: right;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    text-align: right;
   }
 }
 
@@ -123,10 +121,8 @@
     height: 365px;
   }
 
-  @media (min-width: $tablet-min-width) {
-    @media (max-width: $tablet-max-width) {
-      height: 395px;
-    }
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    height: 395px;
   }
 
   @media (min-width: $desktop-min-width) {
