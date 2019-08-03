@@ -1,6 +1,6 @@
 .proposition {
   position: relative;
-  max-width: 1440px;
+  max-width: $desktop-min-width;
 
   @media (max-width: $mobile-max-width) {
     margin-bottom: 60px;
