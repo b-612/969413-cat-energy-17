@@ -52,7 +52,7 @@
   }
 
   &--vk {
-    background-image: url("../../img/icon-vk.svg");
+    background-image: url("../img/icon-vk.svg");
 
     @media (max-width: $mobile-max-width) {
       width: 22px;
@@ -72,7 +72,7 @@
   }
 
   &--insta {
-    background-image: url("../../img/icon-insta.svg");
+    background-image: url("../img/icon-insta.svg");
 
     @media (max-width: $mobile-max-width) {
       width: 16px;
@@ -95,7 +95,7 @@
     width: 10px;
     height: 19px;
 
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
 
     @media (max-width: $mobile-max-width) {
       width: 19px;
