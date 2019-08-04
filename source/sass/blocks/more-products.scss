@@ -1,45 +1,124 @@
 .more-products {
-  padding-top: 22px;
   border: $product-border;
 
   @media (max-width: $mobile-max-width) {
+    padding-top: 22px;
     padding-bottom: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-top: none;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 53px;
+    padding-bottom: 38px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 245px;
   }
 }
 
 .more-products__title {
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: $oswald-regular;
-  font-size: $more-products__title-fs;
-  line-height: $more-products__title-lh;
   color: $font-dark;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 10px;
+
+    font-size: $more-products__title-fs;
+    line-height: $more-products__title-lh;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 165px;
+    margin-bottom: 22px;
+
+    font-size: $more-products__title-fs-td;
+    line-height: $more-products__title-lh-td;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 0.2;
+
+    background-repeat: no-repeat;
+
+    @media (max-width: $mobile-max-width) {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 25px;
+
+      background-image: url("../../img/icon-plus-mobile.svg");
+    }
+
+    @media (min-width: $tablet-min-width) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+
+      background-image: url("../../img/icon-plus.svg");
+    }
+  }
 }
 
 .more-products__slogan {
-  font-size: $more-products__slogan-fs;
-  line-height: $more-products__slogan-lh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: $more-products__slogan-fs;
+    line-height: $more-products__slogan-lh;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 170px;
+
+    font-size: $more-products__slogan-fs-td;
+    line-height: $more-products__slogan-lh-td;
+  }
 }
 
 .more-products__link {
   color: $font-gray;
 
-  background-color: $bg-block;
-}
+  background-color: $more-products__link-bg;
 
-@media (min-width: $tablet-min-width) {
-  .more-products {
-    @media (max-width: $tablet-max-width) {
-      width: 324px;
-    }
-
-    margin-bottom: 95px;
+  @media (max-width: $mobile-max-width) {
+    margin-top: 23px;
   }
-}
 
-@media (min-width: $desktop-min-width) {
-  .more-products {
-    width: 245px;
+  @media (min-width: $tablet-min-width) {
+    width: 100%;
+    margin-top: 80px;
+
+    font-size: $product__link-fs;
+    line-height: $product__link-lh;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $more-products__link-bg-hv;
+  }
+
+  &:active {
+    color: rgba($font-gray, 0.3);
   }
 }

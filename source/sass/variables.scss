@@ -1,8 +1,8 @@
 $mobile-min-width: 320px;
 $mobile-max-width: 767px;
 $tablet-min-width: 768px;
-$tablet-max-width: 1219px;
-$desktop-min-width:1220px;
+$tablet-max-width: 1439px;
+$desktop-min-width:1440px;
 
 $oswald-medium: ("Oswald Medium", "Arial", "Helvetica", sans-serif);
 $oswald-regular: ("Oswald Regular", "Arial", "Helvetica", sans-serif);
@@ -10,24 +10,41 @@ $arial: ("Arial", "Helvetica", sans-serif);
 
 $text-fs: 14px;
 $text-lh: 1.3;
+$text-fs-td: 16px;
+$text-lh-td: 1.5;
 
-$main-nav-fs: 20px;
-$main-nav-lh: 1;
+$main-nav-fs-m: 20px;
+$main-nav-lh-m: 1;
+$main-nav-fs-t: 18px;
+$main-nav-lh-t: 1.4;
+$main-nav-fs-d: 20px;
+$main-nav-lh-d: 1.3;
 
-$section-title-fs: 36px;
-$section-title-lh: 1.7;
-
-$proposition__title-lh: 1;
-$proposition__slogan-fs: 14px;
-$proposition__slogan-lh: 1;
+$section-title-fs-m: 36px;
+$section-title-lh-m: 1.7;
+$section-title-fs-td: 60px;
+$section-title-lh-td: 1;
 
 $link-fs: 14px;
 $link-lh: 1.3;
 
+$proposition__title-lh: 1;
+$proposition__slogan-fs-m: 14px;
+$proposition__slogan-lh-m: 1;
+$proposition__slogan-fs-td: 20px;
+$proposition__slogan-lh-td: 1;
+
+$proposition__link-fs-td: 20px;
+$proposition__link-lh-t: 1;
+
 $program__title-fs: 24px;
 $program__title-lh: 1.5;
+$program__title-fs-td: 36px;
+$program__title-lh-td: 1;
 $program__more-fs: 16px;
 $program__more-lh: 1;
+$program__more-fs-td: 20px;
+$program__more-lh-td: 1;
 
 $results-factoid__name-fs: 12px;
 $results-factoid__name-lh: 1;
@@ -40,14 +57,24 @@ $results-factoid__was-became-lh: 1.2;
 
 $product__title-fs: 16px;
 $product__title-lh: 1.2;
+$product__title-fs-td: 20px;
+$product__title-lh-td: 1;
+$product__link-fs: 16px;
+$product__link-lh: 1.2;
 
 $product-table-fs: 12px;
 $product-table-lh: 1.3;
+$product-table-fs-td: 16px;
+$product-table-lh-td: 1;
 
 $more-products__title-fs: 16px;
 $more-products__title-lh: 1.2;
+$more-products__title-fs-td: 20px;
+$more-products__title-lh-td: 1;
 $more-products__slogan-fs: 12px;
 $more-products__slogan-lh: 1.3;
+$more-products__slogan-fs-td: 16px;
+$more-products__slogan-lh-td: 1.4;
 
 $additional-products__title-fs: 24px;
 $additional-products__title-lh: 1;
@@ -73,8 +100,12 @@ $program-form__footnote-lh: 1.1;
 
 $contacts__slogan-fs: 16px;
 $contacts__slogan-lh: 1.2;
+$contacts__slogan-fs-td: 20px;
+$contacts__slogan-lh-td: 1.2;
 $contacts__address-fs: 14px;
 $contacts__address-lh: 1.4;
+$contacts__address-fs-td: 16px;
+$contacts__address-lh-td: 1.2;
 
 $developer__text-fs: 16px;
 $developer__text-lh: 1;
@@ -88,12 +119,19 @@ $bg-accent: #68b738;
 $bg-accent-hover: #5eaa2f;
 $bg-block: #f2f2f2;
 $bg-body: #ffffff;
+$bg-proposition: #64a83b;
 
 $nav-border: 1px solid #e6e6e6;
 $product-border: 1px solid #ededed;
 $bg-block-border: 1px solid #d9d9d9;
 $other-border: 1px solid #cdcdcd;
 
+$more-products__link-bg: #f2f2f2;
+$more-products__link-bg-hv: #ebebeb;
+
 $proposition-bg-img-m: url("../img/index-background-mobile@1x.jpg");
 $proposition-bg-img-d: url("../img/index-background-desktop@1x.jpg");
 $gifts-bg-img-m: url("../img/gift-photo-mobile@1x.jpg");
+
+$icon-cat-slim: url("../img/icon-cat-slim.svg");
+$icon-cat-pro: url("../img/icon-cat-pro.svg");

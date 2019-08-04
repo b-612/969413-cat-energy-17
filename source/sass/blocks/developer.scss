@@ -1,6 +1,42 @@
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 162px;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $bg-accent;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .developer__text {
+  color: $font-gray;
   font-family: $arial;
   font-size: $developer__text-fs;
   line-height: $developer__text-lh;
-  color: $font-gray;
+
+  @media (max-width: $mobile-max-width) {
+    max-width: 235px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 125px;
+  }
 }

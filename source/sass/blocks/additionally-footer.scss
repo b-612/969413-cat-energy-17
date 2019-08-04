@@ -1,3 +1,44 @@
 .additionally-footer {
+  position: relative;
+
   background-color: $bg-block;
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 38px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-max-width) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.additionally-footer__logo {
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 162px;
+  }
+}
+
+.additionally-footer__socials {
+  margin-left: auto;
+  margin-right: auto;
 }

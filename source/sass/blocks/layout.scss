@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+
+  margin: 0 auto;
+
+  @media (max-width: $mobile-max-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 1220px;
+  }
+}
+
+.page-container {
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+
+    border-bottom: $nav-border;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
