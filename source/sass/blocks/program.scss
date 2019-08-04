@@ -17,7 +17,7 @@
 
   &--weight-loss {
     .program__title::after {
-      background-image: $icon-cat-slim;
+      background-image: url("../img/icon-cat-slim.svg");
 
       @media (max-width: $mobile-max-width) {
         top: -8px;
@@ -47,7 +47,7 @@
 
   &--weight-gain {
     .program__title::after {
-      background-image: $icon-cat-pro;
+      background-image: url("../img/icon-cat-pro.svg");
 
       @media (max-width: $mobile-max-width) {
         top: 4px;

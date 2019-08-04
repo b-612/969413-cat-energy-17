@@ -18,11 +18,17 @@
     padding-bottom: 90px;
 
     background-image:
-      $proposition-bg-img-d,
+      url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, $bg-body 50%, $bg-proposition 50%);
     background-size: 720px 696px, 100% 696px;
     background-position: right top, center top;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, $bg-body 50%, $bg-proposition 50%);
+    }
   }
 
   .container {
@@ -33,7 +39,7 @@
       padding-right: 20px;
 
       background-image:
-        $proposition-bg-img-m,
+        url("../img/index-background-mobile@1x.jpg"),
         linear-gradient(to bottom, $bg-proposition 69%, $bg-body 31%);
       background-size: 320px 305px;
       background-position: center top;
@@ -41,7 +47,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
-          $proposition-bg-img-mr,
+          url("../img/index-background-mobile@2x.jpg"),
           linear-gradient(to bottom, $bg-accent 69%, $bg-body 31%);
       }
     }
@@ -172,45 +178,5 @@
     height: 499px;
     margin-left: -85px;
     margin-right: 150px;
-  }
-}
-
-.proposition__background {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-
-  background-repeat: no-repeat;
-  background-color: $bg-accent;
-  background-image: $proposition-bg-img-m;
-
-  @media (max-width: $mobile-max-width) {
-    left: 50%;
-
-    width: 320px;
-    min-height: 305px;
-
-    transform: translateX(-50%);
-  }
-
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    left: 30px;
-
-    width: 709px;
-    height: 609px;
-
-    background: none;
-  }
-
-  @media (min-width: $desktop-min-width) {
-    top: 0;
-    left: 50%;
-
-    width: 720px;
-    height: 696px;
-
-    background-image: $proposition-bg-img-d;
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
   }
 }
