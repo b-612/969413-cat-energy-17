@@ -15,3 +15,16 @@
     width: 1220px;
   }
 }
+
+.page-container {
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+
+    border-bottom: $nav-border;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

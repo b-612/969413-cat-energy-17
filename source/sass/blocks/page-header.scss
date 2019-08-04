@@ -13,19 +13,6 @@
     padding-top: 54px;
     padding-bottom: 30px;
   }
-
-  .container {
-    @media (max-width: $mobile-max-width) {
-      width: 320px;
-
-      border-bottom: $nav-border;
-    }
-
-    @media (min-width: $tablet-min-width) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
 }
 
 .page-header__top {
