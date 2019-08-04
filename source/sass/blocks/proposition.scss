@@ -39,6 +39,12 @@
       background-size: 320px 305px;
       background-position: center top;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image:
+          $proposition-bg-img-mr,
+          linear-gradient(to bottom, $bg-accent 69%, $bg-body 31%);
+      }
     }
 
     @media (min-width: $desktop-min-width) {
@@ -154,7 +160,6 @@
   @media (max-width: $mobile-max-width) {
     width: 280px;
     height: 271px;
-    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {

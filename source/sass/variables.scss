@@ -4,6 +4,9 @@ $tablet-min-width: 768px;
 $tablet-max-width: 1439px;
 $desktop-min-width:1440px;
 
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 $oswald-medium: ("Oswald Medium", "Arial", "Helvetica", sans-serif);
 $oswald-regular: ("Oswald Regular", "Arial", "Helvetica", sans-serif);
 $arial: ("Arial", "Helvetica", sans-serif);
@@ -129,6 +132,7 @@ $more-products__link-bg: #f2f2f2;
 $more-products__link-bg-hv: #ebebeb;
 
 $proposition-bg-img-m: url("../img/index-background-mobile@1x.jpg");
+$proposition-bg-img-mr: url("../img/index-background-mobile@2x.jpg");
 $proposition-bg-img-d: url("../img/index-background-desktop@1x.jpg");
 $gifts-bg-img-m: url("../img/gift-photo-mobile@1x.jpg");
 
