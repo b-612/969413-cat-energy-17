@@ -40,9 +40,15 @@
 
   background-repeat: no-repeat;
 
+  .socials__icon {
+    fill: $social-gray;
+  }
+
   &:hover,
   &:focus {
-    background-position: 0 0;
+    .socials__icon {
+      fill: $bg-accent;
+    }
 
     outline: none;
   }
@@ -50,67 +56,42 @@
   &:active {
     opacity: 0.3;
   }
+}
 
+.socials__icon {
   &--vk {
-    background-image: url("../img/icon-vk.svg");
-
     @media (max-width: $mobile-max-width) {
       width: 22px;
       height: 12px;
-
-      background-size: 22px 24px;
-      background-position: 0 -12px;
     }
 
     @media (min-width: $tablet-min-width) {
       width: 30px;
       height: 16px;
-
-      background-size: 30px 32px;
-      background-position: 0 -16px;
     }
   }
 
   &--insta {
-    background-image: url("../img/icon-insta.svg");
-
     @media (max-width: $mobile-max-width) {
       width: 16px;
       height: 16px;
-
-      background-size: 16px 32px;
-      background-position: 0 -16px;
     }
 
     @media (min-width: $tablet-min-width) {
       width: 23px;
       height: 23px;
-
-      background-size: 23px 46px;
-      background-position: 0 -23px;
     }
   }
 
   &--fb {
-    width: 10px;
-    height: 19px;
-
-    background-image: url("../img/icon-fb.svg");
-
     @media (max-width: $mobile-max-width) {
       width: 19px;
       height: 19px;
-
-      background-size: 19px 38px;
-      background-position: 0 -19px;
     }
 
     @media (min-width: $tablet-min-width) {
       width: 27px;
       height: 27px;
-
-      background-size: 27px 54px;
-      background-position: 0 -27px;
     }
   }
 }
