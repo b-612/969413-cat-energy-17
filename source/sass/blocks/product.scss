@@ -1,7 +1,8 @@
 .product {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding-top: 22px;
 
   @media (max-width: $mobile-max-width) {
     padding-left: 20px;
@@ -19,6 +20,7 @@
   @media (min-width: $tablet-min-width) {
     flex-direction: column;
     flex-shrink: 0;
+    padding-top: 162px;
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 39px;
@@ -40,6 +42,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 138px;
+    margin-top: 22px;
   }
 }
 
@@ -47,13 +50,30 @@
   flex-shrink: 0;
 
   @media (max-width: $mobile-max-width) {
-    max-width: 140px;
+    width: 140px;
+    height: 144px;
   }
 
   @media (min-width: $tablet-min-width) {
+    position: absolute;
+    left: 0;
+
+    width: 324px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+
+    &--small {
+      top: -45px;
+
+      height: 172px;
+    }
+
+    &--big {
+      top: -80px;
+
+      height: 208px;
+    }
   }
 }
 
@@ -65,7 +85,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
-    margin-top: 25px;
+    margin-top: -3px;
   }
 
   @media (min-width: $tablet-min-width) {

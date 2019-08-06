@@ -65,7 +65,7 @@
       height: 30px;
       margin-bottom: 25px;
 
-      background-image: url("../../img/icon-plus-mobile.svg");
+      background-image: url("../img/icon-plus-mobile.svg");
     }
 
     @media (min-width: $tablet-min-width) {
@@ -73,7 +73,7 @@
       height: 60px;
       margin-bottom: 50px;
 
-      background-image: url("../../img/icon-plus.svg");
+      background-image: url("../img/icon-plus.svg");
     }
   }
 }
