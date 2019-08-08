@@ -4,6 +4,8 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
+var svgstore = require('gulp-svgstore');
+var rename = require("gulp-rename");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
@@ -23,9 +25,24 @@ gulp.task("css", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/**/*.html"
   ])
+
+});
+
+gulp.task ("svgsprite", function () {
+  return gulp.src("source/img/{" +
+    "htmlacademy," +
+    "icon-fb," +
+    "icon-insta," +
+    "icon-vk" +
+    "}.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("server", function () {
