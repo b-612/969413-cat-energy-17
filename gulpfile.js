@@ -34,7 +34,10 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/**/*.html"
-  ])
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build/"));
 });
 
 gulp.task("images", function () {
@@ -44,7 +47,7 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/"));
 });
 
 gulp.task ("svgsprite", function () {
