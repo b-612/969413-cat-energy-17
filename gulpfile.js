@@ -9,19 +9,6 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss", "source/sass/normalize.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
-});
-
-gulp.task("css", function () {
   return gulp.src(["source/sass/style.scss", "source/sass/normalize.scss"])
     .pipe(plumber())
     .pipe(sourcemap.init())
