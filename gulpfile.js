@@ -7,10 +7,10 @@ var sass = require("gulp-sass");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require('gulp-svgstore');
+var svgstore = require("gulp-svgstore");
 var rename = require("gulp-rename");
 var postcss = require("gulp-postcss");
-var jsminify = require('gulp-minify');
+var jsminify = require("gulp-minify");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var server = require("browser-sync").create();
@@ -39,10 +39,13 @@ gulp.task("htmlreload", function () {
 });
 
 gulp.task("css", function () {
-  return gulp.src(["source/sass/style.scss", "source/sass/normalize.scss"])
+  return gulp.src([
+    "source/sass/style.scss",
+    "source/sass/normalize.scss"
+  ])
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: "expanded"}).on("error", sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
