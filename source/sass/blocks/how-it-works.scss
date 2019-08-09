@@ -1,5 +1,6 @@
 .how-it-works {
-  padding-bottom: 42px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     padding-top: 10px;
@@ -12,7 +13,7 @@
 
 .how-it-works__title {
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-min-width) {
@@ -20,7 +21,7 @@
   }
 }
 
-.how-it-works__list.site-list {
+.how-it-works__list {
   @media (min-width: $mobile-min-width) {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +31,7 @@
 .how-it-works__item {
   @media (max-width: $mobile-max-width) {
     margin-left: 80px;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {

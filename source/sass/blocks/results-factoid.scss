@@ -1,6 +1,62 @@
+.results-factoid__top {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-max-width) {
+    justify-content: space-between;
+  }
+}
+
+.results-factoid__item {
+  position: relative;
+
+  border: $other-border;
+  border-radius: 2px;
+
+  @media (max-width: $mobile-max-width) {
+    width: 124px;
+    margin-bottom: 34px;
+  }
+}
+
+.results-factoid__price-item {
+  @media (max-width: $mobile-max-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.results-factoid__name,
+.results-factoid__value {
+  display: block;
+}
+
+.results-factoid__value{
+  @media (max-width: $mobile-max-width) {
+    padding-top: 12px;
+    padding-bottom: 18px;
+  }
+}
+
 .results-factoid__name {
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+
   font-size: $results-factoid__name-fs;
   line-height: $results-factoid__name-lh;
+  text-align: center;
+
+  background-color: $bg-block;
+
+  @media (max-width: $mobile-max-width) {
+    bottom: -16px;
+
+    width: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .results-factoid__value,
@@ -8,13 +64,13 @@
 .results-factoid__was-became {
   font-family: $oswald-regular;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .results-factoid__value {
   font-size: $results-factoid__value-fs;
   line-height: $results-factoid__value-lh;
   color: $font-dark;
-  text-align: center;
 }
 
 .results-factoid__cost {

@@ -2,7 +2,7 @@
   position: relative;
 
   @media (max-width: $mobile-max-width) {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
@@ -135,7 +135,7 @@
     bottom: -60px;
 
     min-width: 280px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
     transform: translateX(-50%);
   }

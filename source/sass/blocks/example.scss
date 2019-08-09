@@ -1,5 +1,26 @@
 .example {
-  min-height: 705px; /* Временно */
   padding-bottom: 40px;
   background-color: $bg-block;
+}
+
+.example__container {
+  @media (max-width: $mobile-max-width) {
+    padding-top: 16px;
+  }
+}
+
+.example__title {
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.example__description {
+  @media (max-width: $mobile-max-width) {
+    width: 270px;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
 }
