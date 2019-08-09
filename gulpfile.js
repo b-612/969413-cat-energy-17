@@ -35,7 +35,11 @@ gulp.task("htmlreload", function () {
     {
     base: "source"
   })
-    .pipe(gulp.dest("build/"));
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("cssclean", function () {
+  return del("build/css");
 });
 
 gulp.task("css", function () {
@@ -130,7 +134,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "csso"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("cssclean", "css", "csso"));
   gulp.watch(
     "source/img/{" +
     "htmlacademy," +
