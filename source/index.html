@@ -113,7 +113,7 @@
             <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="results-factoid__image results-factoid__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример кота до прохождения программы Cat Energy Slim" width="311" height="232">
+            <img class="results-factoid__image results-factoid__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример кота до прохождения программы Cat Energy Slim" width="320" height="240">
           </picture>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
@@ -121,16 +121,15 @@
             <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="results-factoid__image results-factoid__image--after results-factoid__image--none" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример кота после прохождения программы Cat Energy Slim" width="251" height="240">
+            <img class="results-factoid__image results-factoid__image--after no-display" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример кота после прохождения программы Cat Energy Slim" width="251" height="240">
           </picture>
           <div class="container">
-            <div class="results-factoid__was-became">
-              <span class="results-factoid__was-became-text">Было</span>
+            <div class="results-factoid__before-after">
+              <button class="results-factoid__before-after-text results-factoid__before-after-text--before">Было</button>
               <div class="results-factoid__toggles">
-                <div class="results-factoid__toggle results-factoid__toggle--active"></div>
-                <div class="results-factoid__toggle"></div>
+                <div class="results-factoid__toggle results-factoid__toggle--before"></div>
               </div>
-              <span class="results-factoid__was-became-text">Стало</span>
+              <button class="results-factoid__before-after-text results-factoid__before-after-text--after">Стало</button>
             </div>
           </div>
         </div>
@@ -204,6 +203,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
   </body>

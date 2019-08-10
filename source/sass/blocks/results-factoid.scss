@@ -4,6 +4,7 @@
 
   @media (max-width: $mobile-max-width) {
     justify-content: space-between;
+    margin-bottom: 34px;
   }
 }
 
@@ -54,7 +55,7 @@
 
 .results-factoid__value,
 .results-factoid__cost,
-.results-factoid__was-became {
+.results-factoid__before-after {
   font-family: $oswald-regular;
   text-transform: uppercase;
   text-align: center;
@@ -82,18 +83,64 @@
   @media (max-width: $mobile-max-width) {
     display: block;
     max-width: 320px;
+    height: 240px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 33px;
   }
 }
 
-.results-factoid__image--none {
+.results-factoid__before-after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  font-size: $results-factoid__before-after-fs;
+  line-height: $results-factoid__before-after-lh;
+}
+
+.results-factoid__before-after-text {
+  padding: 0;
+  border: none;
+
+  color: $font-dark;
+  text-transform: uppercase;
+
+  background: none;
+}
+
+.results-factoid__toggles {
   @media (max-width: $mobile-max-width) {
-    display: none;
+    width: 84px;
+    height: 14px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: $other-border;
+    border-radius: 6px;
+
+    background-color: $bg-toggles;
   }
 }
 
-.results-factoid__was-became {
-  font-size: $results-factoid__was-became-fs;
-  line-height: $results-factoid__was-became-lh;
+.results-factoid__toggle {
+  @media (max-width: $mobile-max-width) {
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+
+    background-color: $bg-accent;
+  }
+
+  &--before {
+    margin-right: auto;
+  }
+
+  &--after {
+    margin-left: auto;
+  }
 }
