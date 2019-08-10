@@ -16,7 +16,7 @@
 
   &:hover,
   &:focus {
-    svg {
+    .developer__logo {
       fill: $bg-accent;
     }
   }
@@ -39,4 +39,8 @@
   @media (min-width: $tablet-min-width) {
     max-width: 125px;
   }
+}
+
+.developer__logo {
+  fill: $social-gray;
 }

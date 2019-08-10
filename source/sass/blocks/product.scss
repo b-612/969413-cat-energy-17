@@ -46,6 +46,16 @@
   }
 }
 
+.product__image-link {
+  @media (min-width: $tablet-min-width) {
+    position: absolute;
+    left: 0;
+
+    display: block;
+    width: 100%;
+  }
+}
+
 .product__image {
   flex-shrink: 0;
 
@@ -57,23 +67,11 @@
   @media (min-width: $tablet-min-width) {
     position: absolute;
     left: 0;
+    bottom: 0;
 
-    width: 324px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
-
-    &--small {
-      top: -45px;
-
-      height: 172px;
-    }
-
-    &--big {
-      top: -80px;
-
-      height: 208px;
-    }
+    width: 100%;
+    max-height: 235px;
+    margin-bottom: 35px;
   }
 }
 
