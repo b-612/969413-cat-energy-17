@@ -11,33 +11,31 @@ window.addEventListener("resize", function() {
 function sliderOn () {
   var buttonBefore = document.querySelector(".results-factoid__before-after-text--before");
   var buttonAfter = document.querySelector(".results-factoid__before-after-text--after");
+  var toggle = document.querySelector(".results-factoid__toggle");
+  var slides = document.querySelector(".results-factoid__slides");
 
   buttonBefore.onclick = slideBefore;
   buttonAfter.onclick = slideAfter;
 
   function slideBefore() {
-    var toggle = document.querySelector(".results-factoid__toggle");
-    var isBefore = document.querySelector(".results-factoid__toggle--before");
-    var imageBefore = document.querySelector(".results-factoid__image--before");
-    var imageAfter = document.querySelector(".results-factoid__image--after");
-    if (!isBefore) {
-      imageAfter.classList.add("no-display");
-      imageBefore.classList.remove("no-display");
-      toggle.classList.remove("results-factoid__toggle--after");
-      toggle.classList.add("results-factoid__toggle--before");
+    if (slides.classList.contains("results-factoid__slides--after")) {
+      slides.classList.remove("results-factoid__slides--after");
     }
+    slides.classList.add("results-factoid__slides--before");
+    if (toggle.classList.contains("results-factoid__toggle--after")) {
+      toggle.classList.remove("results-factoid__toggle--after");
+    }
+    toggle.classList.add("results-factoid__toggle--before");
   }
 
   function slideAfter() {
-    var toggle = document.querySelector(".results-factoid__toggle");
-    var isAfter = document.querySelector(".results-factoid__toggle--after");
-    var imageBefore = document.querySelector(".results-factoid__image--before");
-    var imageAfter = document.querySelector(".results-factoid__image--after");
-    if (!isAfter) {
-      imageBefore.classList.add("no-display");
-      imageAfter.classList.remove("no-display");
-      toggle.classList.remove("results-factoid__toggle--before");
-      toggle.classList.add("results-factoid__toggle--after");
+    if (slides.classList.contains("results-factoid__slides--before")) {
+      slides.classList.remove("results-factoid__slides--before");
     }
+    slides.classList.add("results-factoid__slides--after");
+    if (toggle.classList.contains("results-factoid__toggle--before")) {
+      toggle.classList.remove("results-factoid__toggle--before");
+    }
+    toggle.classList.add("results-factoid__toggle--after");
   }
 }
