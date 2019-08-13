@@ -9,8 +9,8 @@ window.addEventListener("resize", function() {
 }, false);
 
 function sliderOn () {
-  var buttonBefore = document.querySelector(".results-factoid__before-after-text--before");
-  var buttonAfter = document.querySelector(".results-factoid__before-after-text--after");
+  var buttonBefore = document.querySelector(".results-factoid__before-after-button--before");
+  var buttonAfter = document.querySelector(".results-factoid__before-after-button--after");
   var toggle = document.querySelector(".results-factoid__toggle");
   var slides = document.querySelector(".results-factoid__slides");
 

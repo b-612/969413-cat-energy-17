@@ -1,8 +1,14 @@
 .example {
-  background-color: $bg-block;
-
   @media (max-width: $mobile-max-width) {
     padding-bottom: 36px;
+
+    background-color: $bg-block;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-top: -59px;
+    padding-top: 43px;
+    border-top: $example-border;
   }
 }
 
@@ -16,6 +22,10 @@
   @media (max-width: $mobile-max-width) {
     margin-bottom: 23px;
   }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .example__description {
@@ -25,5 +35,10 @@
     &:last-of-type {
       margin-bottom: 25px;
     }
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 680px;
+    margin-bottom: 53px;
   }
 }

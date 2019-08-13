@@ -49,14 +49,22 @@ $program__more-lh: 1;
 $program__more-fs-td: 20px;
 $program__more-lh-td: 1;
 
-$results-factoid__name-fs: 12px;
-$results-factoid__name-lh: 1;
-$results-factoid__value-fs: 24px;
-$results-factoid__value-lh: 1;
-$results-factoid__cost-fs: 14px;
-$results-factoid__cost-lh: 1.4;
+$results-factoid__name-fs-m: 12px;
+$results-factoid__name-lh-m: 1;
+$results-factoid__name-fs-td: 14px;
+$results-factoid__name-lh-td: 1;
+$results-factoid__value-fs-m: 24px;
+$results-factoid__value-lh-m: 1;
+$results-factoid__value-fs-td: 30px;
+$results-factoid__value-lh-td: 1.2;
+$results-factoid__cost-fs-m: 14px;
+$results-factoid__cost-lh-m: 1.4;
+$results-factoid__cost-fs-td: 20px;
+$results-factoid__cost-lh-td: 1;
 $results-factoid__before-after-fs: 16px;
 $results-factoid__before-after-lh: 1.2;
+$results-factoid__before-after-fs-td: 20px;
+$results-factoid__before-after-lh-td: 1;
 
 $product__title-fs: 16px;
 $product__title-lh: 1.2;
@@ -125,11 +133,19 @@ $bg-block: #f2f2f2;
 $bg-body: #ffffff;
 $bg-proposition: #64a83b;
 $bg-toggles: #ffffff;
+$bg-slide-before: #f2f2f2;
+$bg-slide-after: #ededed;
+$results-factoid-toggles-bg-td: #dcdcdc;
+$toggle-color-td: #ffffff;
 
 $nav-border: 1px solid #e6e6e6;
 $product-border: 1px solid #ededed;
 $bg-block-border: 1px solid #d9d9d9;
 $other-border: 1px solid #cdcdcd;
+$example-border: 1px solid #e6e6e6;
 
 $more-products__link-bg: #f2f2f2;
 $more-products__link-bg-hv: #ebebeb;
+
+$test-gradient: linear-gradient(to bottom, $bg-body 27%, $bg-slide-before 27%);
+$test-gradient-two: linear-gradient(to bottom, $bg-body 27%, $bg-slide-after 27%);
