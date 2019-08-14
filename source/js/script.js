@@ -1,12 +1,23 @@
 if(window.matchMedia('(max-width: 767px)').matches) {
   mobileNav ();
-  sliderOn ();
+
+  try {
+    sliderOn();
+  } catch {
+  }
 }
 
 window.addEventListener("resize", function() {
   if (innerWidth <= 767) {
     mobileNav ();
-    sliderOn ();
+    try {
+      sliderOn();
+    } catch {
+    }
+  }
+
+  if (innerWidth > 767) {
+    isNavNotMobile ();
   }
 }, false);
 
@@ -63,4 +74,9 @@ function sliderOn () {
     }
     toggle.classList.add("results-factoid__toggle--after");
   }
+}
+
+function isNavNotMobile () {
+  var navNotMobile = document.querySelector(".main-nav");
+  navNotMobile.classList.remove("visually-hidden");
 }
