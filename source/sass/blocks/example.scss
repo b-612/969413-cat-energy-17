@@ -16,25 +16,27 @@
 
     padding-bottom: 70px;
   }
-}
 
-.example__background {
-  @media (max-width: $tablet-max-width) {
-    display: none;
-  }
+  &::before {
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
 
-  @media (min-width: $desktop-min-width) {
-    position: absolute;
-    top: 0;
+    @media (min-width: $desktop-min-width) {
+      content: "";
 
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+      position: absolute;
+      top: 0;
 
-    margin-top: 137px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
 
-    background-image: linear-gradient(to right, $bg-slide-before 73%, $bg-slide-after 73%);
+      margin-top: 137px;
+
+      background-image: linear-gradient(to right, $bg-slide-before 73%, $bg-slide-after 73%);
+    }
   }
 }
 
