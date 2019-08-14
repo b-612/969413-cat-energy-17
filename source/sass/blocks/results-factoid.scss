@@ -5,14 +5,15 @@
 .results-factoid__top {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 
   @media (max-width: $mobile-max-width) {
     justify-content: space-between;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    margin-bottom: 85px;
+    margin-bottom: 61px;
   }
 }
 
@@ -35,7 +36,7 @@
 
   @media (min-width: $tablet-min-width) {
     margin-right: 42px;
-
+    margin-bottom: 25px;
     padding-top: 15px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -49,6 +50,7 @@
 
 .results-factoid__price-item {
   @media (max-width: $mobile-max-width) {
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -56,6 +58,7 @@
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     width: 175px;
     margin-left: auto;
+    margin-bottom: 25px;
     padding-top: 11px;
 
     text-align: right;
@@ -107,6 +110,7 @@
   color: $font-dark;
 
   @media (max-width: $mobile-max-width) {
+    max-width: 110px;
 
     font-size: $results-factoid__value-fs-m;
     line-height: $results-factoid__value-lh-m;
@@ -239,7 +243,10 @@
     position: absolute;
     z-index: 2;
     top: -96px;
-    left: 68px;
+    left: 50%;
+
+    width: 100%;
+    transform: translateX(-50%);
 
     font-size: $results-factoid__before-after-fs-td;
     line-height: $results-factoid__before-after-lh-td;
@@ -256,6 +263,25 @@
   background: none;
 
   cursor: pointer;
+
+  @media (max-width: $mobile-max-width) {
+    width: 78px;
+    min-width: 40px;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 115px;
+    min-width: 50px;
+    border-bottom: $before-after-button-border;
+  }
+
+  &--before {
+    text-align: right;
+  }
+
+  &--after {
+    text-align: left;
+  }
 }
 
 .results-factoid__toggles {
@@ -275,10 +301,12 @@
   }
 
   @media (min-width: $tablet-min-width) {
+    position: relative;
+
     width: 428px;
     height: 6px;
-    margin-left: 24px;
-    margin-right: 21px;
+    margin-left: 25px;
+    margin-right: 20px;
     border-radius: 3px;
 
     background-color: $results-factoid-toggles-bg-td;
@@ -296,7 +324,7 @@
 
   @media (min-width: $tablet-min-width) {
     position: absolute;
-    top: -5px;
+    top: -15px;
     left: 50%;
     width: 34px;
     height: 34px;
@@ -317,7 +345,7 @@
       border-width: 2px;
       border-color: $bg-accent;
 
-      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.30);
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
 
     &::before {
