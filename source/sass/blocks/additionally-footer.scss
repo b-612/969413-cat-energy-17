@@ -35,10 +35,15 @@
 
   @media (min-width: $tablet-min-width) {
     max-width: 162px;
+    margin-right: 23px;
   }
 }
 
 .additionally-footer__socials {
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: $mobile-max-width) {
+    padding-bottom: 7px;
+  }
 }

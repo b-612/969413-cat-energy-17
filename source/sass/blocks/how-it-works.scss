@@ -1,6 +1,9 @@
 .how-it-works {
-  padding-top: 16px;
   padding-bottom: 20px;
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 16px;
+  }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     padding-top: 10px;

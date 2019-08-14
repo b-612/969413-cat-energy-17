@@ -15,12 +15,16 @@
 
       position: absolute;
       top: -118px;
-      left: 117px;
+      left: 111px;
       z-index: -1;
 
       font-family: $oswald-regular;
       font-size: 281px;
       color: $bg-block;
+    }
+
+    &:first-of-type::after {
+      left: 117px;
     }
   }
 
