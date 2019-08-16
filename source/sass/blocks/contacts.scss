@@ -17,6 +17,8 @@
   display: flex;
   flex-wrap: wrap;
 
+  background-color: $bg-block;
+
   @media (max-width: $mobile-max-width) {
     width: 320px;
     padding-left: 20px;

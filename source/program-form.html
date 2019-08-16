@@ -42,83 +42,105 @@
     <main class="page-main">
       <h1 class="page-title page-title--form section-title">Подбор программы</h1>
       <section class="program-selection">
-        <h2 class="program-selection__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        <div class="container">
+          <h2 class="program-selection__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        </div>
         <form class="program-selection__program-form program-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="program-form__fieldset">
-            <label class="program-form__label">
-              <span class="program-form__label-text">Имя:*</span>
-              <input class="program-form__input" type="text" name="cat-name" value="Барсик" required>
-            </label>
-            <label class="program-form__label">
-              <span class="program-form__label-text">Вес (кг):*</span>
-              <input class="program-form__input" type="text" name="cat-weight" value="7" required>
-            </label>
-            <label class="program-form__label">
-              <span class="program-form__label-text">Возраст (лет):</span>
-              <input class="program-form__input" type="text" name="cat-age" value="7">
-            </label>
-          </fieldset>
-          <fieldset class="program-form__fieldset">
-            <div class="program-form__wrapper">
+          <div class="container">
+            <fieldset class="program-form__fieldset program-form__fieldset--primary-data">
+              <label class="program-form__label">
+                <span class="program-form__label-text">Имя:*</span>
+                <input class="program-form__input" type="text" name="cat-name" value="Барсик" required>
+              </label>
+              <label class="program-form__label">
+                <span class="program-form__label-text">Вес (кг):*</span>
+                <input class="program-form__input" type="text" name="cat-weight" value="7" required>
+              </label>
+              <label class="program-form__label">
+                <span class="program-form__label-text">Возраст (лет):</span>
+                <input class="program-form__input" type="text" name="cat-age" value="7">
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="program-form__fieldset program-form__fieldset--program-selection">
+            <div class="container">
               <ul class="program-form__mode-list site-list">
                 <li>
-                  <input class="visually-hidden" type="radio" name="weight-mode" id="weight-loss">
+                  <input class="program-form__input program-form__input--radio visually-hidden" type="radio" name="weight-mode" id="weight-loss" checked>
                   <label class="program-form__label program-form__label--radio" for="weight-loss">Похудение</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" type="radio" name="weight-mode" id="weight-gain">
+                  <input class="program-form__input program-form__input--radio visually-hidden" type="radio" name="weight-mode" id="weight-gain">
                   <label class="program-form__label program-form__label--radio" for="weight-gain">Набор массы</label>
                 </li>
                 <li>
-                  <input class="visually-hidden" type="radio" name="weight-mode" id="dont-know">
+                  <input class="program-form__input program-form__input--radio visually-hidden" type="radio" name="weight-mode" id="dont-know">
                   <label class="program-form__label program-form__label--radio" for="dont-know">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="program-form__fieldset">
-            <legend class="program-form__title section-title">Контактные данные (владельца кота)</legend>
-            <label class="program-form__label">
-              <span class="program-form__label-text">E-mail:*</span>
-              <input class="program-form__input" type="email" name="owner-name" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="program-form__label">
-              <span class="program-form__label-text">Телефон:*</span>
-              <input class="program-form__input" type="tel" name="owner-name" placeholder="8 (960) 900-60-90" required>
-            </label>
-            <label class="program-form__label section-title" for="message-field">Комментарий</label>
-            <textarea class="program-form__input" name="message" id="message-field" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
+          <fieldset class="program-form__fieldset program-form__fieldset--owner">
+            <div class="page-container">
+              <legend class="program-form__title section-title">
+                <span class="program-form__title-wrapper">Контактные данные (владельца кота)</span>
+              </legend>
+              <div class="container">
+                <label class="program-form__label">
+                  <span class="program-form__label-text">E-mail:*</span>
+                  <input class="program-form__input" type="email" name="owner-name" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label class="program-form__label">
+                  <span class="program-form__label-text">Телефон:*</span>
+                  <input class="program-form__input" type="tel" name="owner-name" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </div>
+              <label class="program-form__title section-title" for="message-field">
+                  <span class="program-form__title-wrapper">Комментарий</span>
+                </label>
+              <div class="container">
+                <textarea class="program-form__input program-form__textarea" name="message" id="message-field" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="program-form__fieldset">
-            <legend class="program-form__title section-title">Дополнительно</legend>
-            <ul class="program-form__additionally-list site-list">
-              <li>
-                <input class="visually-hidden" type="checkbox" name="sweetener" id="sweetener-checkbox">
-                <label class="program-form__label program-form__label--checkbox" for="sweetener-checkbox">Сахарозаменитель</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="water" id="water-checkbox">
-                <label class="program-form__label program-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
-                <label class="program-form__label program-form__label--checkbox" for="milk-checkbox">Молоко</label>
-              </li>
-              <li>
-                <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
-                <label class="program-form__label program-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="program-form__btn link" type="submit">Отправить заявку</button>
-          <span class="program-form__footnote">* — Обязательные поля</span>
+          <div class="page-container">
+            <fieldset class="program-form__fieldset program-form__fieldset--additionally">
+              <legend class="program-form__title section-title">
+                <span class="program-form__title-wrapper">Дополнительно</span>
+              </legend>
+              <div class="container">
+                <ul class="program-form__additionally-list site-list">
+                  <li>
+                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener-checkbox" checked>
+                    <label class="program-form__label program-form__label--checkbox" for="sweetener-checkbox">Сахарозаменитель</label>
+                  </li>
+                  <li>
+                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="water" id="water-checkbox">
+                    <label class="program-form__label program-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
+                  </li>
+                  <li>
+                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
+                    <label class="program-form__label program-form__label--checkbox" for="milk-checkbox">Молоко</label>
+                  </li>
+                  <li>
+                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
+                    <label class="program-form__label program-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <div class="container">
+              <button class="program-form__btn link" type="submit">Отправить заявку</button>
+              <span class="program-form__footnote">* — Обязательные поля</span>
+            </div>
+          </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Дополнительная информация и контакты</h2>
-      <section class="page-footer__contacts contacts contacts--light">
-        <div class="contacts__top contacts__top--light">
+      <section class="page-footer__contacts contacts">
+        <div class="contacts__top">
           <h3 class="visually-hidden">Адрес</h3>
           <b class="contacts__slogan">Приглашаем
             <br>к сотрудничеству

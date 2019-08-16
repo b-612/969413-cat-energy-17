@@ -27,7 +27,7 @@ function mobileNav () {
 
   toggleButton.classList.remove("main-nav__toggle--no-js");
   toggleButton.classList.add("main-nav__toggle--closed");
-  mainNav.classList.add("visually-hidden");
+  mainNav.classList.add("no-display");
 
   toggleButton.onclick = toggleSwitch;
 
@@ -36,10 +36,10 @@ function mobileNav () {
 
     if (isToggleClosed) {
       toggleButton.classList.remove("main-nav__toggle--closed");
-      mainNav.classList.remove("visually-hidden");
+      mainNav.classList.remove("no-display");
     } else {
       toggleButton.classList.add("main-nav__toggle--closed");
-      mainNav.classList.add("visually-hidden");
+      mainNav.classList.add("no-display");
     }
   }
 }
@@ -78,5 +78,5 @@ function sliderOn () {
 
 function isNavNotMobile () {
   var navNotMobile = document.querySelector(".main-nav");
-  navNotMobile.classList.remove("visually-hidden");
+  navNotMobile.classList.remove("no-display");
 }
