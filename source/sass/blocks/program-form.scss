@@ -1,13 +1,10 @@
 .program-form {
   @media (max-width: $mobile-max-width) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 23px;
     padding-bottom: 34px;
-  }
-
-  .page-container {
-    @media (max-width: $mobile-max-width) {
-      border-bottom: none;
-    }
   }
 }
 
@@ -29,6 +26,7 @@
 
   &--program-selection {
     @media (max-width: $mobile-max-width) {
+      margin-bottom: 27px;
       padding-top: 28px;
       border-top: $fieldset-program-selection-border;
       border-bottom: $fieldset-program-selection-border;
@@ -36,10 +34,6 @@
   }
 
   &--owner {
-    @media (max-width: $mobile-max-width) {
-      padding-top: 27px;
-    }
-
     .container {
       @media (max-width: $mobile-max-width) {
         padding-bottom: 13px;

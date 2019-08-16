@@ -29,12 +29,15 @@
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 71px;
     padding-right: 67px;
     padding-top: 65px;
     padding-bottom: 49px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -151,5 +154,8 @@
 
   @media (max-width: $mobile-max-width) {
     top: -36px;
+    left: 50%;
+
+    transform: translateX(-50%);
   }
 }

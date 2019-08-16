@@ -81,58 +81,54 @@
             </div>
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset--owner">
-            <div class="page-container">
-              <legend class="program-form__title section-title">
-                <span class="program-form__title-wrapper">Контактные данные (владельца кота)</span>
-              </legend>
-              <div class="container">
-                <label class="program-form__label">
-                  <span class="program-form__label-text">E-mail:*</span>
-                  <input class="program-form__input" type="email" name="owner-name" placeholder="kuklachev@gmail.com" required>
-                </label>
-                <label class="program-form__label">
-                  <span class="program-form__label-text">Телефон:*</span>
-                  <input class="program-form__input" type="tel" name="owner-name" placeholder="8 (960) 900-60-90" required>
-                </label>
-              </div>
-              <label class="program-form__title section-title" for="message-field">
-                  <span class="program-form__title-wrapper">Комментарий</span>
-                </label>
-              <div class="container">
-                <textarea class="program-form__input program-form__textarea" name="message" id="message-field" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
-              </div>
+            <legend class="program-form__title section-title">
+              <span class="program-form__title-wrapper">Контактные данные (владельца кота)</span>
+            </legend>
+            <div class="container">
+              <label class="program-form__label">
+                <span class="program-form__label-text">E-mail:*</span>
+                <input class="program-form__input" type="email" name="owner-name" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="program-form__label">
+                <span class="program-form__label-text">Телефон:*</span>
+                <input class="program-form__input" type="tel" name="owner-name" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
+            <label class="program-form__title section-title" for="message-field">
+                <span class="program-form__title-wrapper">Комментарий</span>
+              </label>
+            <div class="container">
+              <textarea class="program-form__input program-form__textarea" name="message" id="message-field" placeholder="Расскажите обо всех повадках кота" rows="8"></textarea>
             </div>
           </fieldset>
-          <div class="page-container">
-            <fieldset class="program-form__fieldset program-form__fieldset--additionally">
-              <legend class="program-form__title section-title">
-                <span class="program-form__title-wrapper">Дополнительно</span>
-              </legend>
-              <div class="container">
-                <ul class="program-form__additionally-list site-list">
-                  <li>
-                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener-checkbox" checked>
-                    <label class="program-form__label program-form__label--checkbox" for="sweetener-checkbox">Сахарозаменитель</label>
-                  </li>
-                  <li>
-                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="water" id="water-checkbox">
-                    <label class="program-form__label program-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
-                  </li>
-                  <li>
-                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
-                    <label class="program-form__label program-form__label--checkbox" for="milk-checkbox">Молоко</label>
-                  </li>
-                  <li>
-                    <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
-                    <label class="program-form__label program-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
+          <fieldset class="program-form__fieldset program-form__fieldset--additionally">
+            <legend class="program-form__title section-title">
+              <span class="program-form__title-wrapper">Дополнительно</span>
+            </legend>
             <div class="container">
-              <button class="program-form__btn link" type="submit">Отправить заявку</button>
-              <span class="program-form__footnote">* — Обязательные поля</span>
+              <ul class="program-form__additionally-list site-list">
+                <li>
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener-checkbox" checked>
+                  <label class="program-form__label program-form__label--checkbox" for="sweetener-checkbox">Сахарозаменитель</label>
+                </li>
+                <li>
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="water" id="water-checkbox">
+                  <label class="program-form__label program-form__label--checkbox" for="water-checkbox">Питьевая вода</label>
+                </li>
+                <li>
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk-checkbox">
+                  <label class="program-form__label program-form__label--checkbox" for="milk-checkbox">Молоко</label>
+                </li>
+                <li>
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins-checkbox">
+                  <label class="program-form__label program-form__label--checkbox" for="vitamins-checkbox">Витамины</label>
+                </li>
+              </ul>
             </div>
+          </fieldset>
+          <div class="container">
+            <button class="program-form__btn link" type="submit">Отправить заявку</button>
+            <span class="program-form__footnote">* — Обязательные поля</span>
           </div>
         </form>
       </section>
