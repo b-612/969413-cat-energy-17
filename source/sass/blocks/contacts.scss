@@ -43,7 +43,7 @@
   @media (min-width: $desktop-min-width) {
     position: absolute;
     top: 94px;
-    left: 101px;
+    left: 32px;
     z-index: 2;
 
     width: 570px;
@@ -151,11 +151,24 @@
 
 .contacts__map-image {
   position: relative;
+  left: 50%;
+
+  transform: translateX(-50%);
 
   @media (max-width: $mobile-max-width) {
     top: -36px;
-    left: 50%;
 
-    transform: translateX(-50%);
+    width: 320px;
+    height: 400px;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 767px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 1300px;
+    height: 400px;
   }
 }

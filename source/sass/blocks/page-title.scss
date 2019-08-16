@@ -1,10 +1,7 @@
 .page-title {
   @media (max-width: $mobile-max-width) {
-    width: 320px;
     margin-top: 15px;
     margin-bottom: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media (min-width: $tablet-min-width) {
@@ -20,10 +17,30 @@
   }
 
   &--form {
+    margin-left: auto;
+    margin-right: auto;
+
     @media (max-width: $mobile-max-width) {
-      margin-left: auto;
-      margin-right: auto;
+      width: $mobile-min-width;
       margin-bottom: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: $tablet-min-width) {
+      margin-bottom: 57px;
+    }
+
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+      width: $tablet-min-width;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      width: $desktop-min-width;
+      padding-left: 33px;
+      padding-right: 40px;
     }
   }
 }

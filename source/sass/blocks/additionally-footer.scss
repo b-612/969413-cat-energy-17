@@ -8,9 +8,14 @@
     padding-bottom: 10px;
   }
 
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     padding-top: 53px;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding-top: 58px;
+    padding-bottom: 55px;
   }
 
   .container {
