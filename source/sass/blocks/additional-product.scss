@@ -1,10 +1,16 @@
 .additional-product {
-  padding-top: 12px;
-  padding-bottom: 20px;
   border-bottom: $other-border;
 
   &:first-of-type {
     border-top: $other-border;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 18px;
   }
 }
 

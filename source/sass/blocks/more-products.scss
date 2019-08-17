@@ -2,8 +2,8 @@
   border: $product-border;
 
   @media (max-width: $mobile-max-width) {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 25px;
+    padding-bottom: 24px;
     padding-left: 20px;
     padding-right: 20px;
     border-top: none;
@@ -102,7 +102,7 @@
   background-color: $more-products__link-bg;
 
   @media (max-width: $mobile-max-width) {
-    margin-top: 23px;
+    margin-top: 20px;
   }
 
   @media (min-width: $tablet-min-width) {

@@ -28,3 +28,14 @@
     flex-wrap: wrap;
   }
 }
+
+.program-form__container {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+}
+
+.no-display {
+  display: none;
+}

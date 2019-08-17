@@ -2,7 +2,6 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
-@import "blocks/layout.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -26,8 +25,10 @@
 @import "blocks/promotions.scss";
 @import "blocks/gifts.scss";
 @import "blocks/program-selection.scss";
-@import "blocks/program-form.scss";
 @import "blocks/contacts.scss";
 @import "blocks/socials.scss";
 @import "blocks/additionally-footer.scss";
 @import "blocks/developer.scss";
+@import "blocks/layout.scss";
+@import "blocks/program-form.scss";
+@import "blocks/heading-ribbon.scss";

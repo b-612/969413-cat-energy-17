@@ -1,13 +1,39 @@
+.program-selection {
+  & > .program-form__container {
+    @media (min-width: $desktop-min-width) {
+      width: 1300px;
+      margin: 0 auto;
+    }
+  }
+}
+
 .program-selection__title {
-  width: 250px;
-  margin-top: 15px;
   margin-right: 0;
-  margin-bottom: 15px;
   margin-left: 0;
 
   font-family: $oswald-regular;
-  font-size: $program-selection__title-fs;
-  line-height: $program-selection__title-lh;
+  font-weight: normal;
   color: $font-dark;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max-width) {
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-size: $program-selection__title-fs-m;
+    line-height: $program-selection__title-lh-m;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 385px;
+    margin-bottom: 64px;
+
+    font-size: $program-selection__title-fs-td;
+    line-height: $program-selection__title-lh-td;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: 33px;
+  }
 }
