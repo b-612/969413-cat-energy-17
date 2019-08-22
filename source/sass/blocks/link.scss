@@ -20,10 +20,15 @@
   color: $font-light;
 
   background-color: $bg-accent;
+  cursor: pointer;
 
   &:hover,
   &:focus,
   &:active {
     background-color: $bg-accent-hover;
+  }
+
+  &:active {
+    color: rgba($font-light, 0.3);
   }
 }

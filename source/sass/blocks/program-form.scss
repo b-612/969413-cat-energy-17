@@ -12,10 +12,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
-    width: 1220px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -45,8 +42,7 @@
     }
 
     @media (min-width: $desktop-min-width) {
-      width: 570px;
-      margin-right: 80px;
+      width: calc(50% - 40px);
       margin-bottom: 50px;
     }
   }
@@ -65,7 +61,7 @@
     }
 
     @media (min-width: $desktop-min-width) {
-      width: 570px;
+      width: calc(50% - 40px);
       margin-bottom: 70px;
     }
   }
@@ -108,13 +104,15 @@
 
 .program-form__container {
   @media (min-width: $desktop-min-width) {
-    width: auto;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &--submit {
     @media (min-width: $tablet-min-width) {
       display: flex;
+      justify-content: flex-start;
       align-items: center;
     }
   }
@@ -381,13 +379,7 @@
 
   &--contacts {
     @media (min-width: $desktop-min-width) {
-      width: 570px;
-    }
-
-    &:nth-of-type(2n) {
-      @media (min-width: $desktop-min-width) {
-        margin-left: 80px;
-      }
+      width: calc(50% - 40px);
     }
   }
 
