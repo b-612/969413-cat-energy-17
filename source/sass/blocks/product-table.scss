@@ -4,6 +4,8 @@
 
   font-family: $arial;
   color: $font-gray;
+  word-break: break-word;
+
 
   @media (max-width: $mobile-max-width) {
     border: none;
@@ -67,6 +69,7 @@
 
 .product-table__indicator,
 .product-table__value {
+  width: 50%;
   padding: 0;
 
   @media (min-width: $tablet-min-width) {

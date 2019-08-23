@@ -25,14 +25,16 @@
   }
 
   &::before {
-    @media (min-width: $tablet-min-width) {
-      content: "";
+    content: "";
 
-      display: block;
-      height: 3px;
-      margin-top: 11px;
+    display: block;
+    height: 3px;
+    margin-top: 11px;
 
-      background-color: $bg-accent;
+    background-color: $bg-accent;
+
+    @media (max-width: $mobile-max-width) {
+      width: calc((100% - 320px) / 2);
     }
 
     @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
@@ -66,7 +68,7 @@
 
 .heading-ribbon__wrapper {
   @media (max-width: $mobile-max-width) {
-    max-width: 181px;
+    max-width: 226px;
     margin-right: 23px;
     margin-left: 20px;
   }

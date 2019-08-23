@@ -1,6 +1,8 @@
 .additional-product {
   border-bottom: $other-border;
 
+  word-break: break-word;
+
   &:first-of-type {
     border-top: $other-border;
   }
@@ -23,4 +25,32 @@
   line-height: $additional-product__title-lh;
   color: $font-dark;
   text-transform: uppercase;
+}
+
+.additional-product__info-table {
+  font-family: $arial;
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 12px;
+
+    font-size: $add-product-table-fs;
+    line-height: $add-product-table-lh;
+  }
+}
+
+.additional-product__how-much,
+.additional-product__price {
+  border: none;
+  padding: 0;
+}
+
+.additional-product__how-much {
+  width: 60%;
+}
+
+.additional-product__price {
+  width: 40%;
+
+  text-align: right;
 }
