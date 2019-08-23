@@ -2,6 +2,19 @@
   padding-top: 28px;
 }
 
+.additional-products__list {
+  @media (max-width: $mobile-max-width) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .additional-products__title {
   font-size: $additional-products__title-fs;
   line-height: $additional-products__title-lh;

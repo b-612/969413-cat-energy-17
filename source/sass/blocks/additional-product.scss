@@ -8,17 +8,14 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 12px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
   }
 }
 
 .additional-product__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   font-family: $oswald-regular;
   font-size: $additional-product__title-fs;
@@ -32,7 +29,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 
     font-size: $add-product-table-fs;
     line-height: $add-product-table-lh;

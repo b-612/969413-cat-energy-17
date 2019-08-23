@@ -1,18 +1,72 @@
 .gifts {
-  min-height: 290px; /*Возможно, временно*/
+  display: flex;
 
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: #6fb346;
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 289px;
+
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-size: 280px 289px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &:not(:first-of-type) {
+    @media (max-width: $mobile-max-width) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.gifts__item-link {
+  width: 100%;
+
+  @media (max-width: $mobile-max-width) {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 31px;
+  }
 }
 
 .gifts__text {
-  width: 147px;
-  margin: 0 auto;
-  margin-bottom: 15px;
+  position: relative;
 
   font-family: $arial;
   font-size: $gifts__text-fs;
   line-height: $gifts__text-lh;
   color: $font-light;
-  text-align: center;
+  word-break: break-word;
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+
+    background-image: url("../img/icon-gift.svg");
+
+    @media (max-width: $mobile-max-width) {
+      left: 50%;
+      top: -122px;
+
+      width: 57px;
+      height: 61px;
+      transform: translateX(-50%);
+
+      background-size: 57px 61px;
+    }
+  }
 }
