@@ -11,6 +11,20 @@
     padding-top: 12px;
     padding-bottom: 17px;
   }
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 28px;
+    padding-bottom: 24px;
+    padding-left: 37px;
+    padding-right: 36px;
+    border-left: $other-border;
+    border-right: $other-border;
+  }
 }
 
 .additional-product__title {
@@ -18,10 +32,23 @@
   margin-bottom: 11px;
 
   font-family: $oswald-regular;
-  font-size: $additional-product__title-fs;
-  line-height: $additional-product__title-lh;
+  font-weight: normal;
   color: $font-dark;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-max-width) {
+    font-size: $additional-product__title-fs-m;
+    line-height: $additional-product__title-lh-m;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    font-size: $additional-product__title-fs-td;
+    line-height: $additional-product__title-lh-td;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 50%;
+  }
 }
 
 .additional-product__info-table {
@@ -34,20 +61,51 @@
     font-size: $add-product-table-fs;
     line-height: $add-product-table-lh;
   }
+
+  @media (min-width: $tablet-min-width) {
+    width: 286px;
+    margin-left: auto;
+  }
 }
 
 .additional-product__how-much,
 .additional-product__price {
   border: none;
   padding: 0;
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    text-align: right;
+  }
 }
 
 .additional-product__how-much {
-  width: 60%;
+  @media (max-width: $mobile-max-width) {
+    width: 60%;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 61%;
+    padding-right: 15px;
+
+    text-align: right;
+  }
 }
 
 .additional-product__price {
-  width: 40%;
-
   text-align: right;
+
+  @media (max-width: $mobile-max-width) {
+    width: 40%;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    width: 29%;
+  }
+}
+
+.additional-product__link {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 100%;
+    margin-top: 15px;
+  }
 }

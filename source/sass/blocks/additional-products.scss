@@ -13,6 +13,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 708px;
+  }
 }
 
 .additional-products__title {

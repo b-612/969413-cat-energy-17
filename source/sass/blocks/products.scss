@@ -11,11 +11,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-bottom: -101px;
+  }
 }
 
 .products__item {
   @media (min-width: $tablet-min-width) {
-    margin-bottom: 140px;
+    margin-bottom: 141px;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
