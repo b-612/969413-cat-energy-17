@@ -85,7 +85,6 @@
 
   @media (min-width: $tablet-min-width) {
     width: 61%;
-    padding-right: 15px;
 
     text-align: right;
   }
@@ -100,6 +99,7 @@
 
   @media (min-width: $tablet-min-width) {
     width: 29%;
+    padding-left: 10px;
   }
 }
 

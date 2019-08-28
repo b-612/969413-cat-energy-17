@@ -3,6 +3,11 @@
     padding-top: 40px;
     padding-bottom: 33px;
   }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 72px;
+    padding-bottom: 76px;
+  }
 }
 
 .promotions__list {
@@ -13,5 +18,9 @@
   @media (max-width: $tablet-max-width) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 708px;
   }
 }
