@@ -1,5 +1,11 @@
 .additional-products {
   padding-top: 28px;
+
+  @media (min-width: $desktop-min-width) {
+    width: 896px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .additional-products__list {
@@ -16,6 +22,10 @@
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     width: 708px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 116px;
   }
 }
 

@@ -8,6 +8,12 @@
     padding-top: 72px;
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 144px;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .promotions__list {
@@ -22,5 +28,15 @@
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     width: 708px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 245px;
+  }
+}
+
+.promotions__item {
+  &:not(:first-of-type) {
+    margin-top: 20px;
   }
 }

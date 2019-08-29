@@ -15,11 +15,15 @@
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     margin-bottom: -101px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: -96px;
+  }
 }
 
 .products__item {
   @media (min-width: $tablet-min-width) {
-    margin-bottom: 141px;
+    margin-bottom: 144px;
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
