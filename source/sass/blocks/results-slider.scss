@@ -9,14 +9,13 @@
     margin-right: auto;
   }
 
-  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width){
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-min-width) {
-    position: absolute;
-    top: -425px;
-    right: 0;
+    width: 650px;
+    margin-top: -53px;
   }
 }
 
@@ -61,26 +60,26 @@
   }
 
   &--before {
-    @media (min-width: $tablet-min-width) {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
       background-image: linear-gradient(to bottom, $bg-body 27%, $bg-slide-before 27%);
     }
 
     @media (min-width: $desktop-min-width) {
       width: 350px;
 
-      background-image: linear-gradient(to bottom, $bg-body 29%, $bg-slide-before 29%);
+      //background-image: linear-gradient(to bottom, $bg-body 29%, $bg-slide-before 29%);
     }
   }
 
   &--after {
-    @media (min-width: $tablet-min-width) {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
       background-image: linear-gradient(to bottom, $bg-body 27%, $bg-slide-after 27%);
     }
 
     @media (min-width: $desktop-min-width) {
       width: 284px;
 
-      background-image: linear-gradient(to bottom, $bg-body 29%, $bg-slide-after 29%);
+      //background-image: linear-gradient(to bottom, $bg-body 29%, $bg-slide-after 29%);
     }
   }
 }
@@ -127,7 +126,6 @@
 .results-slider__before-after {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 
   font-family: $oswald-regular;
@@ -150,9 +148,13 @@
     margin-top: -97px;
   }
 
+  @media (max-width: $tablet-max-width) {
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-min-width) {
-    top: -26px;
-    right: -323px;
+    justify-content: flex-end;
+    margin-top: -96px;
   }
 }
 
@@ -173,10 +175,17 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    max-width: 115px;
     min-width: 50px;
     padding-bottom: 4px;
     border-bottom: $before-after-button-border;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    max-width: 115px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    max-width: 52px;
   }
 
   &--before {
@@ -209,11 +218,19 @@
 
     width: 428px;
     height: 6px;
-    margin-left: 23px;
-    margin-right: 23px;
     border-radius: 3px;
 
     background-color: $results-factoid-toggles-bg-td;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: 23px;
+    margin-right: 19px;
   }
 }
 

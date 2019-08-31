@@ -3,10 +3,6 @@
 
   @media (min-width: $desktop-min-width) {
     position: relative;
-
-    width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -75,6 +71,10 @@
     padding-top: 11px;
 
     text-align: right;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 20px;
   }
 }
 
