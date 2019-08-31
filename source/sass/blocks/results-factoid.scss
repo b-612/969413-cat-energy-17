@@ -172,7 +172,7 @@
   }
 }
 
-.results-factoid__slider {
+.results-slider {
   @media (max-width: $mobile-max-width) {
     width: 320px;
     overflow: hidden;
@@ -190,7 +190,7 @@
   }
 }
 
-.results-factoid__slides {
+.results-slider__slides {
   display: flex;
 
   @media (max-width: $mobile-max-width) {
@@ -214,7 +214,7 @@
   }
 }
 
-.results-factoid__image-wrapper {
+.results-slider__image-wrapper {
   @media (min-width: $tablet-min-width) {
     position: relative;
 
@@ -255,7 +255,7 @@
   }
 }
 
-.results-factoid__image {
+.results-slider__image {
   @media (max-width: $mobile-max-width) {
     display: block;
     flex-shrink: 0;
