@@ -45,9 +45,9 @@ function mobileNav () {
 }
 
 function sliderOn () {
-  var buttonBefore = document.querySelector(".results-factoid__before-after-button--before");
-  var buttonAfter = document.querySelector(".results-factoid__before-after-button--after");
-  var toggle = document.querySelector(".results-factoid__toggle");
+  var buttonBefore = document.querySelector(".results-slider__before-after-button--before");
+  var buttonAfter = document.querySelector(".results-slider__before-after-button--after");
+  var toggle = document.querySelector(".results-slider__toggle");
   var slides = document.querySelector(".results-slider__slides");
 
   buttonBefore.onclick = slideBefore;
@@ -58,10 +58,10 @@ function sliderOn () {
       slides.classList.remove("results-slider__slides--after");
     }
     slides.classList.add("results-slider__slides--before");
-    if (toggle.classList.contains("results-factoid__toggle--after")) {
-      toggle.classList.remove("results-factoid__toggle--after");
+    if (toggle.classList.contains("results-slider__toggle--after")) {
+      toggle.classList.remove("results-slider__toggle--after");
     }
-    toggle.classList.add("results-factoid__toggle--before");
+    toggle.classList.add("results-slider__toggle--before");
   }
 
   function slideAfter() {
@@ -69,10 +69,10 @@ function sliderOn () {
       slides.classList.remove("results-slider__slides--before");
     }
     slides.classList.add("results-slider__slides--after");
-    if (toggle.classList.contains("results-factoid__toggle--before")) {
-      toggle.classList.remove("results-factoid__toggle--before");
+    if (toggle.classList.contains("results-slider__toggle--before")) {
+      toggle.classList.remove("results-slider__toggle--before");
     }
-    toggle.classList.add("results-factoid__toggle--after");
+    toggle.classList.add("results-slider__toggle--after");
   }
 }
 
