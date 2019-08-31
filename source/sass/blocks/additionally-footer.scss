@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    padding-top: 53px;
+    padding-top: 58px;
     padding-bottom: 50px;
   }
 
@@ -32,14 +32,11 @@
 
 .additionally-footer__logo {
   @media (max-width: $mobile-max-width) {
-    width: 100%;
     margin-right: auto;
     margin-bottom: 28px;
-    text-align: center;
   }
 
   @media (min-width: $tablet-min-width) {
-    max-width: 162px;
     margin-right: 23px;
   }
 }

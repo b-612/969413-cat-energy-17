@@ -188,6 +188,17 @@
     max-width: 52px;
   }
 
+  &:hover,
+  &:focus {
+    border-bottom-style: solid;
+
+    outline: none;
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
+
   &--before {
     text-align: right;
   }

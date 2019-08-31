@@ -32,7 +32,7 @@
     padding-left: 71px;
     padding-right: 67px;
     padding-top: 61px;
-    padding-bottom: 49px;
+    padding-bottom: 44px;
   }
 
   @media (max-width: $tablet-max-width) {
@@ -124,6 +124,8 @@
 .contacts__map,
 .contacts__iframe {
   width: 100%;
+
+  background-color: #f3f1ed;
 
   @media (max-width: $mobile-max-width) {
     height: 365px;
