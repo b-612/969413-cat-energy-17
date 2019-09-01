@@ -4,6 +4,8 @@
 
   font-family: $arial;
   color: $font-gray;
+  word-break: break-word;
+
 
   @media (max-width: $mobile-max-width) {
     border: none;
@@ -51,6 +53,8 @@
 
   @media (min-width: $tablet-min-width) {
     width: 155px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: $product__title-fs-td;
     line-height: $product__title-lh-td;
@@ -67,6 +71,7 @@
 
 .product-table__indicator,
 .product-table__value {
+  width: 50%;
   padding: 0;
 
   @media (min-width: $tablet-min-width) {

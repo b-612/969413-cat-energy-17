@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy - Каталог продукции</title>
+    <link rel="preload" href="css/normalize.min.css" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -11,11 +16,11 @@
     <header class="page-header">
       <div class="container page-container">
         <div class="page-header__top">
-          <a class="page-header__logo" href="index.html">
+          <a class="logo" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов">
+              <img class="logo__image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов" width="191" height="38">
             </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
@@ -72,9 +77,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/chicken-small-mobile@1x.jpg" srcset="img/towebp/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                  <img class="product__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -104,9 +109,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/chicken-big-mobile@1x.jpg" srcset="img/towebp/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                  <img class="product__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -136,9 +141,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/fish-small-mobile@1x.jpg" srcset="img/towebp/fish-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                  <img class="product__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -168,9 +173,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/fish-big-mobile@1x.jpg" srcset="img/towebp/fish-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                  <img class="product__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -200,9 +205,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/buckwheat-small-mobile@1x.jpg" srcset="img/towebp/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -232,9 +237,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/buckwheat-big-mobile@1x.jpg" srcset="img/towebp/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                  <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -264,9 +269,9 @@
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/towebp/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/towebp/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                  <img class="product__image" src="img/towebp/rice-small-mobile@1x.jpg" srcset="img/towebp/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 грамм" width="140" height="144">
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                  <img class="product__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 грамм" width="140" height="144">
                 </picture>
               </a>
               <a class="product__link link" href="#">Заказать</a>
@@ -283,64 +288,69 @@
         <h2 class="additional-products__title heading-ribbon section-title">
           <span class="heading-ribbon__wrapper">Дополнительные товары</span>
         </h2>
-        <ul class="additional-products__list site-list">
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__title">Сахарозаменитель</h3>
-            <table class="additional-product__info-table add-product-table">
-              <tr>
-                <td>1 упаковка (100 г)</td>
-                <td>200 Р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__link link" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__title">Питьевая вода</h3>
-            <table class="additional-products__info-table add-product-table">
-              <tr>
-                <td>5 литров</td>
-                <td>50 Р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__link link" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__title">Молоко</h3>
-            <table class="additional-product__info-table add-product-table">
-              <tr>
-                <td>1 литр</td>
-                <td>100 Р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__link link" href="#">Заказать</a>
-          </li>
-          <li class="additional-products__item additional-product">
-            <h3 class="additional-product__title">Витамины</h3>
-            <table class="additional-product__table add-product-table">
-              <tr>
-                <td>1 упаковка (30 г)</td>
-                <td>300 Р.</td>
-              </tr>
-            </table>
-            <a class="additional-product__link link" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="promotions">
-        <h2 class="visually-hidden">Выгодные предложения</h2>
-        <ul class="promotions__list site-list">
-          <li class="promotions__item gifts">
-            <a class="gifts__item-link" href="#">
-              <p class="gifts__text">Закажите все и получите чехол для кота в подарок!</p>
-            </a>
-          </li>
-        </ul>
+        <div class="additional-products__container">
+          <ul class="additional-products__list site-list">
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__title">Сахарозаменитель</h3>
+              <table class="additional-product__info-table">
+                <tr class="additional-product__table-row">
+                  <td class="additional-product__how-much">1 упаковка (100 г)</td>
+                  <td class="additional-product__price">200 Р.</td>
+                </tr>
+              </table>
+              <a class="additional-product__link link" href="#">Заказать</a>
+            </li>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__title">Питьевая вода</h3>
+              <table class="additional-product__info-table">
+                <tr class="additional-product__table-row">
+                  <td class="additional-product__how-much">5 литров</td>
+                  <td class="additional-product__price">50 Р.</td>
+                </tr>
+              </table>
+              <a class="additional-product__link link" href="#">Заказать</a>
+            </li>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__title">Молоко</h3>
+              <table class="additional-product__info-table">
+                <tr class="additional-product__table-row">
+                  <td class="additional-product__how-much">1 литр</td>
+                  <td class="additional-product__price">100 Р.</td>
+                </tr>
+              </table>
+              <a class="additional-product__link link" href="#">Заказать</a>
+            </li>
+            <li class="additional-products__item additional-product">
+              <h3 class="additional-product__title">Витамины</h3>
+              <table class="additional-product__info-table">
+                <tr class="additional-product__table-row">
+                  <td class="additional-product__how-much">1 упаковка (30 г)</td>
+                  <td class="additional-product__price">300 Р.</td>
+                </tr>
+              </table>
+              <a class="additional-product__link link" href="#">Заказать</a>
+            </li>
+          </ul>
+          <section class="additional-products__promotions promotions">
+            <h2 class="visually-hidden">Выгодные предложения</h2>
+            <ul class="promotions__list site-list">
+              <li class="promotions__item gifts">
+                <a class="gifts__item-link" href="#">
+                  <p class="gifts__text">Закажите все
+                    <br>и получите чехол для
+                    <br>кота в подарок!
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Дополнительная информация и контакты</h2>
-      <section class="page-footer__contacts contacts contacts--light">
-        <div class="contacts__top contacts__top--light">
+      <section class="page-footer__contacts contacts">
+        <div class="contacts__top">
           <h3 class="visually-hidden">Адрес</h3>
           <b class="contacts__slogan">Приглашаем
             <br>к сотрудничеству
@@ -356,17 +366,17 @@
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/towebp/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/towebp/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="contacts__map-image" src="img/towebp/bg-map-mobile@1x.png" srcset="img/towebp/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
           </picture>
         </div>
       </section>
       <section class="page-footer__additionally additionally-footer">
         <div class="container">
           <h3 class="visually-hidden">Дополнительная информация</h3>
-          <a class="additionally-footer__logo" href="#">
-            <img class="additionally-footer__logo-inscription" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
+          <a class="additionally-footer__logo logo-inscription" href="#">
+            <img src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
           </a>
           <ul class="additionally-footer__socials socials site-list">
             <li class="socials__item">

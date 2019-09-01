@@ -4,6 +4,8 @@
   display: flex;
   flex-wrap: wrap;
 
+  word-break: break-word;
+
   @media (max-width: $mobile-max-width) {
     padding-left: 20px;
     padding-right: 20px;
@@ -87,6 +89,6 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    margin-top: 33px;
+    margin-top: 35px;
   }
 }

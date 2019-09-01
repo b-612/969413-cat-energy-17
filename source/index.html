@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy - Функциональное питание для котов</title>
+    <link rel="preload" href="css/normalize.min.css" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -11,11 +16,11 @@
     <header class="page-header">
       <div class="container page-container">
         <div class="page-header__top">
-          <a class="page-header__logo">
+          <a class="logo">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов">
+              <img class="logo__image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов" width="191" height="38">
             </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
@@ -52,9 +57,9 @@
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/towebp/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/towebp/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-            <img class="proposition__image" src="img/towebp/index-can-mobile@1x.png" srcset="img/towebp/index-can-mobile@2x.png 2x" alt="Банка Cat Energy Pro. Курица. 500 грамм">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="proposition__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Банка Cat Energy Pro. Курица. 500 грамм">
           </picture>
         </div>
       </section>
@@ -87,58 +92,56 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__container container">
-          <h2 class="example__title section-title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        </div>
-        <div class="example__results-factoid results-factoid">
-          <div class="container">
-            <div class="results-factoid__top">
-              <div class="results-factoid__item">
-                <span class="results-factoid__value">5 кг</span>
-                <span class="results-factoid__name">снижение веса</span>
-              </div>
-              <div class="results-factoid__item">
-                <span class="results-factoid__value">60 дней</span>
-                <span class="results-factoid__name">затрачено времени</span>
-              </div>
-              <div class="results-factoid__price-item">
-                <span class="results-factoid__cost-text">Затраты на питание:
-                  <span class="results-factoid__cost">15 000 руб.</span></span>
+        <div class="example__wrapper">
+          <div class="example__container container">
+            <h2 class="example__title section-title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__results-factoid results-factoid">
+              <div class="results-factoid__top">
+                <div class="results-factoid__item">
+                  <span class="results-factoid__value">5 кг</span>
+                  <span class="results-factoid__name">снижение веса</span>
+                </div>
+                <div class="results-factoid__item">
+                  <span class="results-factoid__value">60 дней</span>
+                  <span class="results-factoid__name">затрачено времени</span>
+                </div>
+                <div class="results-factoid__price-item">
+              <span class="results-factoid__cost-text">Затраты на питание:
+                <span class="results-factoid__cost">15 000 руб.</span></span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="results-factoid__slider">
-            <div class="results-factoid__slides">
-              <div class="results-factoid__image-wrapper results-factoid__image-wrapper--before">
+          <div class="results-slider">
+            <div class="results-slider__slides">
+              <div class="results-slider__image-wrapper results-slider__image-wrapper--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                  <img class="results-factoid__image results-factoid__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример кота до прохождения программы Cat Energy Slim" width="320" height="240">
+                  <img class="results-slider__image results-slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Пример кота до прохождения программы Cat Energy Slim" width="320" height="240">
                 </picture>
               </div>
-              <div class="results-factoid__image-wrapper results-factoid__image-wrapper--after">
+              <div class="results-slider__image-wrapper results-slider__image-wrapper--after">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                  <img class="results-factoid__image results-factoid__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример кота после прохождения программы Cat Energy Slim" width="251" height="240">
+                  <img class="results-slider__image results-slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Пример кота после прохождения программы Cat Energy Slim" width="251" height="240">
                 </picture>
               </div>
             </div>
-          </div>
-          <div class="container">
-            <div class="results-factoid__before-after">
-              <button class="results-factoid__before-after-button results-factoid__before-after-button--before">Было</button>
-              <div class="results-factoid__toggles">
-                <div class="results-factoid__toggle results-factoid__toggle--before"></div>
+            <div class="results-slider__before-after">
+              <button class="results-slider__before-after-button results-slider__before-after-button--before">Было</button>
+              <div class="results-slider__toggles">
+                <div class="results-slider__toggle results-slider__toggle--before"></div>
               </div>
-              <button class="results-factoid__before-after-button results-factoid__before-after-button--after">Стало</button>
+              <button class="results-slider__before-after-button results-slider__before-after-button--after">Стало</button>
             </div>
           </div>
         </div>
@@ -163,17 +166,17 @@
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/towebp/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/towebp/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="contacts__map-image" src="img/towebp/bg-map-mobile@1x.png" srcset="img/towebp/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
           </picture>
         </div>
       </section>
       <section class="page-footer__additionally additionally-footer">
         <div class="container">
           <h3 class="visually-hidden">Дополнительная информация</h3>
-          <a class="additionally-footer__logo" href="#">
-            <img class="additionally-footer__logo-inscription" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
+          <a class="additionally-footer__logo logo-inscription" href="#">
+            <img src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
           </a>
           <ul class="additionally-footer__socials socials site-list">
             <li class="socials__item">

@@ -1,4 +1,36 @@
 .promotions {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  @media (max-width: $mobile-max-width) {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    padding-top: 72px;
+    padding-bottom: 76px;
+  }
+}
+
+.promotions__list {
+  @media (max-width: $mobile-max-width) {
+    width: 280px;
+  }
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 245px;
+  }
+}
+
+.promotions__item {
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
 }

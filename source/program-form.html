@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy - Подбор программы</title>
+    <link rel="preload" href="css/normalize.min.css" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -11,11 +16,11 @@
     <header class="page-header">
       <div class="container page-container">
         <div class="page-header__top">
-          <a class="page-header__logo" href="index.html">
+          <a class="logo" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов">
+              <img class="logo__image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов" width="191" height="38">
             </picture>
           </a>
           <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
@@ -40,13 +45,15 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-title page-title--form section-title">Подбор программы</h1>
+      <div class="container">
+        <h1 class="page-title page-title--form section-title">Подбор программы</h1>
+      </div>
       <section class="program-selection">
-        <div class="container program-form__container">
+        <div class="container">
           <h2 class="program-selection__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
         </div>
         <form class="program-selection__program-form program-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="container program-form__container">
+          <div class="program-form__container container">
             <fieldset class="program-form__fieldset program-form__fieldset--primary-data">
               <label class="program-form__label">
                 <span class="program-form__label-text">Имя:*</span>
@@ -61,9 +68,7 @@
                 <input class="program-form__input" type="text" name="cat-age" value="7">
               </label>
             </fieldset>
-          </div>
-          <fieldset class="program-form__fieldset program-form__fieldset--program-selection">
-            <div class="container program-form__container">
+            <fieldset class="program-form__fieldset program-form__fieldset--program-selection">
               <ul class="program-form__mode-list site-list">
                 <li>
                   <input class="program-form__input program-form__input--radio visually-hidden" type="radio" name="weight-mode" id="weight-loss" checked>
@@ -78,13 +83,13 @@
                   <label class="program-form__label program-form__label--radio" for="dont-know">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="program-form__fieldset program-form__fieldset--owner">
-            <legend class="heading-ribbon section-title">
+            <h3 class="heading-ribbon section-title">
               <span class="heading-ribbon__wrapper">Контактные данные (владельца кота)</span>
-            </legend>
-            <div class="container program-form__container">
+            </h3>
+            <div class="program-form__container container">
               <label class="program-form__label program-form__label--contacts">
                 <span class="program-form__label-text">E-mail:*</span>
                 <input class="program-form__input program-form__input--email" type="email" name="owner-name" value="kuklachev@gmail.com" required>
@@ -97,15 +102,15 @@
             <label class="heading-ribbon section-title" for="message-field">
                 <span class="heading-ribbon__wrapper">Комментарий</span>
               </label>
-            <div class="container program-form__container">
+            <div class="program-form__container container">
               <textarea class="program-form__input program-form__textarea" name="message" id="message-field" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
             </div>
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset--additionally">
-            <legend class="heading-ribbon section-title">
+            <h3 class="heading-ribbon section-title">
               <span class="heading-ribbon__wrapper">Дополнительно</span>
-            </legend>
-            <div class="container program-form__container">
+            </h3>
+            <div class="program-form__container container">
               <ul class="program-form__additionally-list site-list">
                 <li class="program-form__additionally-item">
                   <input class="program-form__input program-form__input--checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener-checkbox" checked>
@@ -126,7 +131,7 @@
               </ul>
             </div>
           </fieldset>
-          <div class="container program-form__container program-form__container--submit">
+          <div class="program-form__container program-form__container--submit container">
             <button class="program-form__btn link" type="submit">Отправить заявку</button>
             <span class="program-form__footnote">* — Обязательные поля</span>
           </div>
@@ -152,17 +157,17 @@
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/towebp/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/towebp/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img class="contacts__map-image" src="img/towebp/bg-map-mobile@1x.png" srcset="img/towebp/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy адрес на карте: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
           </picture>
         </div>
       </section>
       <section class="page-footer__additionally additionally-footer">
         <div class="container">
           <h3 class="visually-hidden">Дополнительная информация</h3>
-          <a class="additionally-footer__logo" href="#">
-            <img class="additionally-footer__logo-inscription" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
+          <a class="additionally-footer__logo logo-inscription" href="#">
+            <img src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов. Логотип" width="128" height="24">
           </a>
           <ul class="additionally-footer__socials socials site-list">
             <li class="socials__item">
@@ -202,6 +207,7 @@
       </section>
     </footer>
     <script src="js/script.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

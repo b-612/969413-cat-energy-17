@@ -2,6 +2,7 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "blocks/logo.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -15,10 +16,10 @@
 @import "blocks/advantage-item.scss";
 @import "blocks/example.scss";
 @import "blocks/results-factoid.scss";
+@import "blocks/results-slider.scss";
 @import "blocks/products.scss";
 @import "blocks/product.scss";
 @import "blocks/product-table.scss";
-@import "blocks/add-product-table.scss";
 @import "blocks/more-products.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/additional-product.scss";
