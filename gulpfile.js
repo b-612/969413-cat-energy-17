@@ -5,6 +5,7 @@ var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -27,6 +28,7 @@ gulp.task("copyfonts", function () {
 
 gulp.task("copyhtml", function () {
   return gulp.src("source/**/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
