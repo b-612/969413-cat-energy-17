@@ -22,23 +22,23 @@ window.addEventListener("resize", function() {
 }, false);
 
 function mobileNav () {
-  var toggleButton = document.querySelector(".main-nav__toggle");
+  var toggleButton = document.querySelector(".main-nav-toggle");
   var mainNav = document.querySelector(".main-nav");
 
-  toggleButton.classList.remove("main-nav__toggle--no-js");
-  toggleButton.classList.add("main-nav__toggle--closed");
+  toggleButton.classList.remove("main-nav-toggle--no-js");
+  toggleButton.classList.add("main-nav-toggle--closed");
   mainNav.classList.add("no-display");
 
   toggleButton.onclick = toggleSwitch;
 
   function toggleSwitch () {
-    var isToggleClosed = document.querySelector(".main-nav__toggle--closed");
+    var isToggleClosed = document.querySelector(".main-nav-toggle--closed");
 
     if (isToggleClosed) {
-      toggleButton.classList.remove("main-nav__toggle--closed");
+      toggleButton.classList.remove("main-nav-toggle--closed");
       mainNav.classList.remove("no-display");
     } else {
-      toggleButton.classList.add("main-nav__toggle--closed");
+      toggleButton.classList.add("main-nav-toggle--closed");
       mainNav.classList.add("no-display");
     }
   }
